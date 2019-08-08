@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da4f2815-6c75-49a2-9a6e-6bdac99cdf63" name="Default Changelist" comment="" />
+    <list default="true" id="da4f2815-6c75-49a2-9a6e-6bdac99cdf63" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../U1M1L2Katas/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RectPavingCompany/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RectPavingCompany/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RectPavingCompany/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RectPavingCompany/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U1M1L2Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M1L2Katas/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,7 +33,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/company/LuxuryTaxCalculatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-114">
+            <state relative-caret-position="-192">
               <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
@@ -36,7 +42,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -207,12 +213,15 @@
     <history-entry file="LuxuryTaxCalculatorTest - 2019.08.06 at 14h 48m 54s.xml">
       <configuration name="LuxuryTaxCalculatorTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LuxuryTaxCalculatorTest - 2019.08.06 at 19h 02m 40s.xml">
+      <configuration name="LuxuryTaxCalculatorTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="746" y="23" width="934" height="967" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25560537" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -243,7 +252,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/com/company/LuxuryTaxCalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
+        <state relative-caret-position="-192">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
