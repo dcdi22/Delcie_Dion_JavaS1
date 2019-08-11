@@ -182,8 +182,71 @@ public class App {
         return fiveLessArr;
     }
 
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+//    Split at 5
 
+    public static int[][] splitAtFive(int [] arr) {
+        int counter = 0;
+        int counter2 =0;
+        for (int i = 0; i <arr.length; i++) {
+            if (arr[i] < 5) {
+                counter++;
+            }
+            if (arr[i] >= 5) {
+                counter2++;
+            }
+        }
+        int [] fiveLessArr = new int[counter];
+        int [] fiveMoreArr = new int[counter2];
+        int iterationCounter = 0;
+        int iterationCounter2 = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < 5) {
+                fiveLessArr[iterationCounter] = arr[i];
+                iterationCounter++;
+            }
+        }
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] >= 5) {
+                fiveMoreArr[iterationCounter2] = arr[i];
+                iterationCounter2++;
+            }
+        }
+        int[][] splitAtFiveArr = {fiveLessArr, fiveMoreArr};
+        return splitAtFiveArr;
+    }
+
+//    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//    Evens and Odds
+
+    public static String[][] evensAndOdds(String [] arr) {
+
+        int counter = 0;
+        int counter2 = 0;
+        for (int i = 0; i < arr.length; i += 2) {
+            counter++;
+        }
+        for (int i = 1; i < arr.length; i += 2) {
+           counter2++;
+        }
+        String[] evensArr = new String[counter];
+        String[] oddsArr = new String[counter2];
+        int iterationCounter1 = 0;
+        int iterationCounter2 = 0;
+        for (int i = 0; i < arr.length; i += 2) {
+            evensArr[iterationCounter1] = String.valueOf(arr[i]);
+            iterationCounter1++;
+        }
+        for (int i = 1; i < arr.length; i += 2) {
+            oddsArr[iterationCounter2] = String.valueOf(arr[i]);
+            iterationCounter2++;
+        }
+        String[][] evensOddArr = {evensArr, oddsArr};
+        return evensOddArr;
+
+    }
 
 
 
@@ -227,6 +290,12 @@ public class App {
 //
 //        int [] fiveOrLessArray = lessThanFive(exampleArr);
 //        System.out.println(Arrays.toString(fiveOrLessArray));
+
+//        int[][] splitAtFiveArray = splitAtFive(exampleArr);
+//        System.out.println(Arrays.deepToString(splitAtFiveArray));
+
+//        String[][] evensOddArray = evensAndOdds(exampleStringArr);
+//        System.out.println(Arrays.deepToString(evensOddArray));
 
 
 

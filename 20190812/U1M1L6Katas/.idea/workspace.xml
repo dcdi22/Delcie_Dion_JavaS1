@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db454904-187e-4a8d-a890-34398009b984" name="Default Changelist" comment="" />
+    <list default="true" id="db454904-187e-4a8d-a890-34398009b984" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/company/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/company/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M1-Summative-Dion-Delcie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M1-Summative-Dion-Delcie/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
+            <state relative-caret-position="1036">
+              <caret line="296" column="68" lean-forward="true" selection-start-line="296" selection-start-column="68" selection-end-line="298" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/company/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1228">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="2430">
+              <caret line="157" column="66" selection-start-line="157" selection-start-column="66" selection-end-line="157" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,13 +50,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
+            <state relative-caret-position="3375">
               <caret line="244" selection-start-line="244" selection-end-line="244" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -67,11 +78,12 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="656" />
+    <option name="x" value="740" />
     <option name="y" value="23" />
-    <option name="width" value="1024" />
+    <option name="width" value="940" />
     <option name="height" value="973" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -140,11 +152,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -191,7 +204,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.testSecondLargest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.testEvensAndOdds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="U1-M1-L6-Katas" />
       <extension name="coverage">
         <pattern>
@@ -201,7 +214,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.company" />
       <option name="MAIN_CLASS_NAME" value="com.company.AppTest" />
-      <option name="METHOD_NAME" value="testSecondLargest" />
+      <option name="METHOD_NAME" value="testEvensAndOdds" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.testSplitAt5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="U1-M1-L6-Katas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.AppTest" />
+      <option name="METHOD_NAME" value="testSplitAt5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -223,29 +252,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.testTotalOdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="U1-M1-L6-Katas" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.AppTest" />
-      <option name="METHOD_NAME" value="testTotalOdd" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="JUnit.AppTest.testTotalEven" />
-        <item itemvalue="JUnit.AppTest.testTotalOdd" />
+        <item itemvalue="JUnit.AppTest.testEvensAndOdds" />
         <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.AppTest.testSecondLargest" />
+        <item itemvalue="JUnit.AppTest.testSplitAt5" />
+        <item itemvalue="JUnit.AppTest.testTotalEven" />
       </list>
     </recent_temporary>
   </component>
@@ -263,42 +276,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest_testSecondLargest - 2019.08.10 at 13h 16m 33s.xml">
-      <configuration name="AppTest.testSecondLargest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_testSecondLargest - 2019.08.10 at 13h 18m 09s.xml">
-      <configuration name="AppTest.testSecondLargest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_testSecondLargest - 2019.08.10 at 13h 21m 37s.xml">
-      <configuration name="AppTest.testSecondLargest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_testTotalOdd - 2019.08.10 at 13h 27m 27s.xml">
-      <configuration name="AppTest.testTotalOdd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_testTotalOdd - 2019.08.10 at 13h 28m 08s.xml">
-      <configuration name="AppTest.testTotalOdd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_testTotalOdd - 2019.08.10 at 13h 31m 42s.xml">
-      <configuration name="AppTest.testTotalOdd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_testTotalOdd - 2019.08.10 at 13h 34m 03s.xml">
-      <configuration name="AppTest.testTotalOdd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_testTotalOdd - 2019.08.10 at 13h 34m 05s.xml">
-      <configuration name="AppTest.testTotalOdd" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AppTest_testTotalEven - 2019.08.10 at 13h 34m 31s.xml">
       <configuration name="AppTest.testTotalEven" configurationId="JUnit" />
     </history-entry>
     <history-entry file="AppTest - 2019.08.10 at 13h 34m 38s.xml">
       <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AppTest - 2019.08.10 at 19h 11m 08s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_testSplitAt5 - 2019.08.10 at 19h 45m 51s.xml">
+      <configuration name="AppTest.testSplitAt5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_testSplitAt5 - 2019.08.10 at 19h 46m 38s.xml">
+      <configuration name="AppTest.testSplitAt5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_testSplitAt5 - 2019.08.10 at 19h 49m 41s.xml">
+      <configuration name="AppTest.testSplitAt5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_testSplitAt5 - 2019.08.10 at 19h 49m 56s.xml">
+      <configuration name="AppTest.testSplitAt5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_testSplitAt5 - 2019.08.10 at 21h 13m 04s.xml">
+      <configuration name="AppTest.testSplitAt5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_testEvensAndOdds - 2019.08.10 at 21h 16m 38s.xml">
+      <configuration name="AppTest.testEvensAndOdds" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest - 2019.08.10 at 21h 16m 43s.xml">
+      <configuration name="AppTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="656" y="23" width="1024" height="973" extended-state="0" />
+    <frame x="740" y="23" width="940" height="973" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32586557" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18374164" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -364,15 +377,15 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
+        <state relative-caret-position="3375">
           <caret line="244" selection-start-line="244" selection-end-line="244" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/company/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1228">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="2430">
+          <caret line="157" column="66" selection-start-line="157" selection-start-column="66" selection-end-line="157" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -381,8 +394,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
+        <state relative-caret-position="1036">
+          <caret line="296" column="68" lean-forward="true" selection-start-line="296" selection-start-column="68" selection-end-line="298" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
