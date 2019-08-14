@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53dd4dfd-5e05-4b07-89ae-0b5605d811cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../20190813/DelcieDionU1M2L1PBD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../20190813/DelcieDionU1M2L1PBD/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1M2L2Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1M2L2Katas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1M2L2Katas/src/main/java/ComputerMouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1M2L2Katas/src/main/java/ComputerMouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1M2L3Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1M2L3Katas/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/company/CalculatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="48" column="6" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="48" selection-end-column="6" />
+            <state relative-caret-position="363">
+              <caret line="48" column="6" selection-start-line="20" selection-start-column="1" selection-end-line="48" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -58,7 +59,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="3" />
-    <option name="y" value="199" />
+    <option name="y" value="23" />
     <option name="width" value="975" />
     <option name="height" value="974" />
   </component>
@@ -68,8 +69,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,6 +132,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunDashboard">
@@ -224,12 +226,15 @@
     <history-entry file="CalculatorTest - 2019.08.13 at 17h 36m 31s.xml">
       <configuration name="CalculatorTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CalculatorTest - 2019.08.13 at 17h 45m 26s.xml">
+      <configuration name="CalculatorTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="199" width="975" height="974" extended-state="0" />
+    <frame x="3" y="23" width="975" height="974" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23472668" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23901394" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -239,7 +244,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32993197" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39909297" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -260,8 +265,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/com/company/CalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="48" column="6" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="48" selection-end-column="6" />
+        <state relative-caret-position="363">
+          <caret line="48" column="6" selection-start-line="20" selection-start-column="1" selection-end-line="48" selection-end-column="6" />
         </state>
       </provider>
     </entry>

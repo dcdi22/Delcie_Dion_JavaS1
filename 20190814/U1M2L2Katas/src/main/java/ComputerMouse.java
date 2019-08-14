@@ -12,7 +12,7 @@ public class ComputerMouse {
 
     }
 
-    public void click() {
+    public void click() { // said to put "i" in for params but kept giving it errors
 
     }
 
