@@ -8,7 +8,13 @@ public class MonthConverterIf {
         System.out.println("Enter a number 1 - 12");
         int userInput = Integer.parseInt(scan.nextLine());
 
-        if (userInput == 1) {
+
+        // Handle errors first
+        // if userInput is below or equal to 0 || userInput is above 12
+        if ((userInput <= 0 || userInput > 12)) {
+            System.out.println("You have entered an invalid number. You must enter a number between 1 and 12. Goodbye.");
+        }
+        else if (userInput == 1) {
             System.out.println("January");
         }
         else if (userInput == 2) {
@@ -41,12 +47,11 @@ public class MonthConverterIf {
         else if (userInput == 11) {
             System.out.println("November");
         }
-        else if (userInput == 12) {
+        else {
             System.out.println("December");
         }
-        else if (!(userInput < 0 && userInput >= 12)){
-            System.out.println("You have entered an invalid number. You must enter a number between 1 and 12. Goodbye.");
-        }
+        // only option left thanks to error handling is 12
+        // 12 will printout to December
 
 //        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
 

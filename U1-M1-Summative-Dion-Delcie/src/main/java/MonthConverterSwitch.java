@@ -8,6 +8,11 @@ public class MonthConverterSwitch {
         System.out.println("Enter a number 1 - 12");
         int userInput = Integer.parseInt(scan.nextLine());
 
+        // Switch looks for matching case, if it can't find
+        // a case that matches userInput, prints default
+
+        // 'break' is used to execute the statements of single case
+        // break is necessary to avoid passing through to the code in the next case
         switch (userInput) {
             case 1:
                 System.out.println("January");

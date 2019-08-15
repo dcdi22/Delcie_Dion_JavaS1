@@ -6,6 +6,7 @@ public class ArrayFunUserArray {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
+        // Initiating the array vvv
         int[] userArray = new int[5];
 
         System.out.println("Please enter a number");
