@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8342327c-edf4-45b7-921a-785d4a1e7393" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../20190815/DelcieDionU1M2L5PBD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../20190815/DelcieDionU1M2L5PBD/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../20190815/implementation-userIO-interface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../20190815/implementation-userIO-interface/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ArrayFunReverseIt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ArrayFunReverseIt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ArrayFunUserArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ArrayFunUserArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MonthConverterIf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MonthConverterIf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MonthConverterSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MonthConverterSwitch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ValidNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ValidNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190816/U1M2L6Katas/src/test/java/com/company/Backyard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190816/U1M2L6Katas/src/test/java/com/company/Basement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190816/U1M2L6Katas/src/test/java/com/company/Bathroom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190816/U1M2L6Katas/src/test/java/com/company/Bedroom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190816/U1M2L6Katas/src/test/java/com/company/Home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../20190816/U1M2L6Katas/src/test/java/com/company/Kitchen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -78,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ArrayFun5Words.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+            <state relative-caret-position="45">
+              <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -109,12 +109,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/SomeMath.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ArrayFun5Words.java" />
         <option value="$PROJECT_DIR$/src/main/java/MonthConverterIf.java" />
         <option value="$PROJECT_DIR$/src/main/java/MonthConverterSwitch.java" />
         <option value="$PROJECT_DIR$/src/main/java/ValidNumber.java" />
         <option value="$PROJECT_DIR$/src/main/java/ArrayFunUserArray.java" />
         <option value="$PROJECT_DIR$/src/main/java/ArrayFunReverseIt.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ArrayFun5Words.java" />
       </list>
     </option>
   </component>
@@ -245,7 +245,7 @@
     <frame x="801" y="94" width="825" height="715" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29246488" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29246488" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -254,7 +254,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32744783" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32744783" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39967898" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -328,8 +328,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ArrayFun5Words.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        <state relative-caret-position="45">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
         </state>
       </provider>
     </entry>
