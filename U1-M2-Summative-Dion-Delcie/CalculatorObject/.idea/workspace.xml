@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3004d83-2500-4978-a979-2e4f7875333d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/CalculatorObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CustomerComposition/src/main/java/com/company/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CustomerComposition/src/main/java/com/company/CustomerAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CustomerComposition/src/main/java/com/company/RewardsCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190814/calculator-refactored/Calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190814/calculator-refactored/Calculator/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConverterInterface/src/main/java/com/company/ConverterApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConverterInterface/src/main/java/com/company/ConverterIf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ConverterInterface/src/main/java/com/company/ConverterSwitch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IceCreamClassDesign/src/main/java/IceCreamFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IceCreamClassDesign/src/main/java/IceCreamShop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RPGInheritance/src/main/java/com/company/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RPGInheritance/src/main/java/com/company/Constable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RPGInheritance/src/main/java/com/company/Farmer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RPGInheritance/src/main/java/com/company/Warrior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M1-Summative-Dion-Delcie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M1-Summative-Dion-Delcie/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPGInheritance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPGInheritance/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,7 +36,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/CalculatorObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
+            <state relative-caret-position="573">
               <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
             </state>
           </provider>
@@ -86,7 +91,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,10 +129,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunDashboard">
@@ -177,9 +183,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="520" y="255" width="1160" height="742" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25402504" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25849733" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -223,7 +228,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/CalculatorObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
+        <state relative-caret-position="573">
           <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
         </state>
       </provider>
