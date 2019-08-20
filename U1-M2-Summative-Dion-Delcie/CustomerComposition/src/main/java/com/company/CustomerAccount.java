@@ -11,6 +11,8 @@ public class CustomerAccount {
     private Address billingAddress;
 
     private RewardsCard rewardsCard;
+    private boolean isRewrdsMember;
+
 
     public String getFirstName() {
         return firstName;
@@ -66,5 +68,13 @@ public class CustomerAccount {
 
     public void setRewardsCard(RewardsCard rewardsCard) {
         this.rewardsCard = rewardsCard;
+    }
+
+    public boolean isRewrdsMember() {
+        return isRewrdsMember;
+    }
+
+    public void setRewrdsMember(boolean rewrdsMember) {
+        isRewrdsMember = rewrdsMember;
     }
 }

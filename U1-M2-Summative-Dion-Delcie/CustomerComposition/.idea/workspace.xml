@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f229660d-be0f-45af-ad25-c6de6fa707e2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../CalculatorObject/src/main/java/com/company/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CalculatorObject/src/main/java/com/company/CalculatorObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/CustomerAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/RewardsCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190814/calculator-refactored/Calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190814/calculator-refactored/Calculator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190820/LargestCities/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190820/LargestCities/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/CustomerAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/CustomerAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceCreamClassDesign/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IceCreamClassDesign/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPGInheritance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RPGInheritance/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPGInheritance/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RPGInheritance/src/main/java/com/company/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RPGInheritance/src/main/java/com/company/Farmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RPGInheritance/src/main/java/com/company/Farmer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,8 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -32,13 +31,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/CustomerAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+            <state relative-caret-position="450">
+              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding>
+                <element signature="e#317#318#0" expanded="true" />
                 <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#1559#1560#0" expanded="true" />
+                <element signature="e#1596#1597#0" expanded="true" />
+                <element signature="e#1653#1654#0" expanded="true" />
+                <element signature="e#1698#1699#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/RewardsCard.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+              <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
               <folding>
                 <element signature="e#280#281#0" expanded="true" />
                 <element signature="e#332#333#0" expanded="true" />
@@ -119,6 +123,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,11 +162,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunDashboard">
@@ -190,8 +195,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="693" y="255" width="987" height="742" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2074074" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21164021" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -226,16 +232,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/CustomerAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding>
-            <element signature="e#349#350#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Address.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -249,7 +245,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/RewardsCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
           <folding>
             <element signature="e#280#281#0" expanded="true" />
             <element signature="e#332#333#0" expanded="true" />
@@ -262,6 +258,21 @@
             <element signature="e#577#578#0" expanded="true" />
             <element signature="e#624#625#0" expanded="true" />
             <element signature="e#666#667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/CustomerAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#1559#1560#0" expanded="true" />
+            <element signature="e#1596#1597#0" expanded="true" />
+            <element signature="e#1653#1654#0" expanded="true" />
+            <element signature="e#1698#1699#0" expanded="true" />
           </folding>
         </state>
       </provider>

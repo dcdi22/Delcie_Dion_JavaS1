@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a460bdeb-a98e-433a-93de-f24815f2d85f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../U1-M1-Summative-Dion-Delcie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M1-Summative-Dion-Delcie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/u1-m2-summative-assessment.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/u1-m2-summative-assessment.md" afterDir="false" />
-    </list>
+    <list default="true" id="a460bdeb-a98e-433a-93de-f24815f2d85f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -28,7 +23,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/City.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="165">
               <caret line="40" column="41" lean-forward="true" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
               <folding>
                 <element signature="e#122#123#0" expanded="true" />
@@ -72,8 +67,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-249" />
-    <option name="y" value="603" />
+    <option name="x" value="113" />
+    <option name="y" value="199" />
     <option name="width" value="1210" />
     <option name="height" value="799" />
   </component>
@@ -117,6 +112,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunDashboard">
@@ -159,7 +155,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-249" y="603" width="1210" height="799" extended-state="0" />
+    <frame x="113" y="199" width="1210" height="799" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24486302" />
@@ -196,7 +192,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/City.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="165">
           <caret line="40" column="41" lean-forward="true" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
           <folding>
             <element signature="e#122#123#0" expanded="true" />
