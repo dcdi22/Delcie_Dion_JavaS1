@@ -56,7 +56,7 @@ Create your solution in an IntelliJ project called ```CalculatorObject```.
 
 ---
 
-### IceCreamDesign
+### IceCreamDesign / Is this like good enough
 In this exercise, you will model the attributes of two different ```IceCream``` classes: 
 
 1. The first class represents ice cream as it might be modeled in the point-of-sale system in an ice cream shop.
@@ -66,7 +66,7 @@ Create your solution in an IntelliJ project called ```IceCreamClassDesign```.
 
 ---
 
-### RPGInheritance
+### RPGInheritance / Do I need getters and setters
 In this exercise, you will design an inheritance hierarchy for characters in a video game. Your design must include a common base clase for the following three character types:
 * Farmer
 * Constable
@@ -152,7 +152,7 @@ Create your solution in an IntelliJ project called ```CustomerComposition```.
     * City
     * State
     * Zip
-  * If the customer is a Rewards Member or not.
+  * If the customer is a Rewards Member or not. ✘
 
 
 ---
