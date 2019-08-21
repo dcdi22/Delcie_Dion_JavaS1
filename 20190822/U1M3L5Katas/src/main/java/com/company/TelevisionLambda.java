@@ -20,6 +20,7 @@ public class TelevisionLambda {
 
             tvList = mapper.readValue(new File("televisions.json"), new TypeReference<List<Televisions>>(){});
 
+            // Store as a List
             tvList
                     .stream()
                     .collect(Collectors.toList());
@@ -33,6 +34,7 @@ public class TelevisionLambda {
                         System.out.println(tv.getScreenSize());
                     });
 
+            // Screens greater than 60
             int size = 60;
             tvList.stream()
                     .filter(b->b.getScreenSize() > size)
@@ -44,6 +46,7 @@ public class TelevisionLambda {
                         System.out.println(tv.getScreenSize());
                     });
 
+            // Mapping by brand
             Map<String, List<Televisions>> groupedtvs =
                     tvList.stream()
                     .collect(Collectors.groupingBy((t->t.getBrand())));
@@ -52,19 +55,21 @@ public class TelevisionLambda {
                 System.out.println(key);
             }
 
+            // Average screen size
             double avgScreenSize =
                     tvList.stream()
                     .mapToInt(t->t.getScreenSize()) // Give me an int stream of screen sizes
                     .average() // average all those ints
                     .getAsDouble(); // return as a double
-            System.out.println("Average screensize is " + avgScreenSize);
+            System.out.println("\nAverage screensize is " + avgScreenSize);
 
+            // Largest screen size
             int maxScreenSize =
                     tvList.stream()
                     .mapToInt(t->t.getScreenSize())
                     .max()
                     .getAsInt();
-            System.out.println("The largest screensize is " + maxScreenSize);
+            System.out.println("\nThe largest screensize is " + maxScreenSize);
 
             // Bonus Challenge ======================
 //            List<Televisions> sortedList =
