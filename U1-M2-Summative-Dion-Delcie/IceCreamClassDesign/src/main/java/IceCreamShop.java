@@ -1,5 +1,14 @@
 public class IceCreamShop {
 
+    /*
+    Steps
+    1. Add properties/ variables
+    2. Add any necessary methods
+    3. Generate getters
+    4. Generate setters
+    5. Make a default constructor
+     */
+
     private String iceCreamStyle; // ice cream, frozen yogurt, sherbet/sorbet
     private String flavour; // or String[] with array of different flavours
     private boolean cone; // cup or cone

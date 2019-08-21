@@ -2,6 +2,9 @@ package com.company;
 
 public class CalculatorObject {
 
+    // The following are all examples of Method Overloading.
+    // The difference of Data Types in the parameters
+
     //    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //    ADD
 

@@ -1,5 +1,14 @@
 public class IceCreamFactory {
 
+    /*
+    Steps
+    1. Add properties/ variables
+    2. Add any necessary methods
+    3. Generate getters
+    4. Generate setters
+    5. Make a default constructor
+     */
+
     private int heavyCream;
     private int wholeMilk;
     private int eggs;
@@ -26,5 +35,6 @@ public class IceCreamFactory {
         // ship to ice cream store front
     }
 
-
+    public IceCreamFactory() {
+    }
 }

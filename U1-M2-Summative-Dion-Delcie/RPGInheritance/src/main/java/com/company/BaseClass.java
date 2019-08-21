@@ -5,17 +5,28 @@ public class BaseClass {
     /*
     Shared values
 
-Properties / variables
-- name
-- health (initial value = 100)
+    Properties / variables
+    - name
+    - health (initial value = 100)
 
-Abilities / methods
-- run
-- attack
-- heal
-- decreaseHealth
-- increaseStamina
-- decreaseStamina
+    Abilities / methods
+    - run
+    - attack
+    - heal
+    - decreaseHealth
+    - increaseStamina
+    - decreaseStamina
+     */
+
+    // =====================================================
+
+    /*
+    Steps
+    1. Add properties/ variables
+    2. Add any necessary methods
+    3. Generate getters
+    4. Generate setters
+    5. Make a default constructor
      */
 
     private String name;
