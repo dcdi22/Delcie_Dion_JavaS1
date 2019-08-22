@@ -11,16 +11,16 @@ public class App {
         Car car = new Car();
 
         System.out.println("Please enter make.");
-        car.setMake(scan.nextLine());
+        car.setMake(scan.nextLine().toLowerCase());
 
         System.out.println("Please enter the model");
-        car.setModel(scan.nextLine());
+        car.setModel(scan.nextLine().toLowerCase());
 
         System.out.println("Please enter year");
         car.setYear(Integer.parseInt(scan.nextLine()));
 
         System.out.println("Please enter the color");
-        car.setColor(scan.nextLine());
+        car.setColor(scan.nextLine().toLowerCase());
 
         System.out.println("Please enter mileage.");
         car.setMiles(Integer.parseInt(scan.nextLine()));
@@ -66,22 +66,24 @@ public class App {
     public void makeSearch() {
         Scanner scan = new Scanner(System.in);
         System.out.println("What make are you looking for?");
-        String make = scan.nextLine();
+        String make = scan.nextLine().toLowerCase();
         Car.getCarList().stream()
                 .filter(c->c.getMake().equals(make))
                 .forEach(car-> {
-                    System.out.println("Make: " + car.getMake() + "|\tModel: " + car.getModel() + "|\tYear: " + car.getYear() + "|\tColor: " + car.getColor() + "|\t Mileage: " + car.getMiles() );
+                    System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+                    System.out.println("Make: " + car.getMake() + " | Model: " + car.getModel() + " | Year: " + car.getYear() + " | Color: " + car.getColor() + " | Mileage: " + car.getMiles() );
                 });
     }
 
     public void modelSearch() {
         Scanner scan = new Scanner(System.in);
         System.out.println("What model are you looking for?");
-        String model = scan.nextLine();
+        String model = scan.nextLine().toLowerCase();
         Car.getCarList().stream()
                 .filter(c->c.getModel().equals(model))
                 .forEach(car-> {
-                    System.out.println("Make: " + car.getMake() + "|\tModel: " + car.getModel() + "|\tYear: " + car.getYear() + "|\tColor: " + car.getColor() + "|\t Mileage: " + car.getMiles() );
+                    System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+                    System.out.println("Make: " + car.getMake() + " | Model: " + car.getModel() + " | Year: " + car.getYear() + " | Color: " + car.getColor() + " | Mileage: " + car.getMiles() );
                 });
     }
 
@@ -92,18 +94,20 @@ public class App {
         Car.getCarList().stream()
                 .filter(c->c.getYear() == year)
                 .forEach(car-> {
-                    System.out.println("Make: " + car.getMake() + "|\tModel: " + car.getModel() + "|\tYear: " + car.getYear() + "|\tColor: " + car.getColor() + "|\t Mileage: " + car.getMiles() );
+                    System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+                    System.out.println("Make: " + car.getMake() + " | Model: " + car.getModel() + " | Year: " + car.getYear() + " | Color: " + car.getColor() + " | Mileage: " + car.getMiles() );
                 });
     }
 
     public void colorSearch() {
         Scanner scan = new Scanner(System.in);
         System.out.println("What color are you looking for?");
-        String color = scan.nextLine();
+        String color = scan.nextLine().toLowerCase();
         Car.getCarList().stream()
                 .filter(c->c.getColor().equals(color))
                 .forEach(car-> {
-                    System.out.println("Make: " + car.getMake() + "|\tModel: " + car.getModel() + "|\tYear: " + car.getYear() + "|\tColor: " + car.getColor() + "|\t Mileage: " + car.getMiles() );
+                    System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+                    System.out.println("Make: " + car.getMake() + " | Model: " + car.getModel() + " | Year: " + car.getYear() + " | Color: " + car.getColor() + " | Mileage: " + car.getMiles() );
                 });
     }
 
@@ -114,14 +118,16 @@ public class App {
         Car.getCarList().stream()
                 .filter(c->c.getMiles() <= miles)
                 .forEach(car-> {
-                    System.out.println("Make: " + car.getMake() + "|\tModel: " + car.getModel() + "|\tYear: " + car.getYear() + "|\tColor: " + car.getColor() + "|\t Mileage: " + car.getMiles() );
+                    System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+                    System.out.println("Make: " + car.getMake() + " | Model: " + car.getModel() + " | Year: " + car.getYear() + " | Color: " + car.getColor() + " | Mileage: " + car.getMiles() );
                 });
     }
 
     public void listAll() {
         Car.getCarList().stream()
                 .forEach(car-> {
-                    System.out.println("Make: " + car.getMake() + "|\tModel: " + car.getModel() + "|\tYear: " + car.getYear() + "|\tColor: " + car.getColor() + "|\t Mileage: " + car.getMiles() );
+                    System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+                    System.out.println("Make: " + car.getMake() + " | Model: " + car.getModel() + " | Year: " + car.getYear() + " | Color: " + car.getColor() + " | Mileage: " + car.getMiles() );
                 });
     }
 
@@ -130,7 +136,8 @@ public class App {
         Scanner scan = new Scanner(System.in);
         System.out.println("From the list which car would you like to delete?");
         for (int i = 0; i <Car.getCarList().size() ; i++) {
-            System.out.println("ID#: " + i + "|Make: " + Car.getCarList().get(i).getMake() + "|Model: " + Car.getCarList().get(i).getModel() + "|Year: " + Car.getCarList().get(i).getYear() + "|Color: " + Car.getCarList().get(i).getColor() + "|Mileage: " + Car.getCarList().get(i).getMiles() );
+            System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+            System.out.println("ID#: " + i + " | Make: " + Car.getCarList().get(i).getMake() + " | Model: " + Car.getCarList().get(i).getModel() + " | Year: " + Car.getCarList().get(i).getYear() + " | Color: " + Car.getCarList().get(i).getColor() + " | Mileage: " + Car.getCarList().get(i).getMiles() );
         }
         System.out.println("Enter the ID number of the car you wish to remove.");
         int userInput = Integer.parseInt(scan.nextLine());
@@ -145,7 +152,7 @@ public class App {
         App app = new App();
 
 //        List<Car> carList = new ArrayList<>();
-////        Car car = new Car();
+//        Car car = new Car();
 //        Car testCar = new Car("Chevy","Camaro", 1976, "Blue", 40000);
 //
 //        carList.add(testCar);
@@ -155,17 +162,15 @@ public class App {
 
         do {
             System.out.println("\nPlease select from the following options \n" +
-                    "\t1. Add Car \t2. Delete Car \t3. List All Available Cars \t4. Search Cars \t5.Exit Program");
+                    "\t1.Add Car | 2.Delete Car | 3.List All Available Cars | 4.Search Cars | 5.Exit Program |");
             int userInput = Integer.parseInt(scan.nextLine());
             switch(userInput) {
                 case 1:
                     app.addCar();
                     break;
                 case 2:
-                    // Delete Method
                     app.delete();
                 case 3:
-                    // List Method
                     app.listAll();
                     break;
                 case 4:
