@@ -5,6 +5,11 @@ public class App {
     public static void main(String[] args) {
         CalculatorObject calculator = new CalculatorObject();
 
+        /*
+        Because of Method Overloading we don’t have to create and
+        remember different names for functions doing the same thing
+         */
+
         calculator.add(1,1);
         calculator.subtract(23,52);
         calculator.multiply(34,2);

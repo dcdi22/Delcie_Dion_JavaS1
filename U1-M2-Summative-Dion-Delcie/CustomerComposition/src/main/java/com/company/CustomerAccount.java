@@ -2,6 +2,18 @@ package com.company;
 
 public class CustomerAccount {
 
+    // Has-a relationship
+    // Customer `has a`(n) Address
+
+    /*
+    Steps
+    1. Add properties/ variables
+    2. Add any necessary methods ~~~
+    3. Generate getters
+    4. Generate setters
+    5. Make a default constructor
+     */
+
     private String firstName;
     private String lastName;
     private String email;
@@ -11,7 +23,7 @@ public class CustomerAccount {
     private Address billingAddress;
 
     private RewardsCard rewardsCard;
-    private boolean isRewrdsMember;
+    private boolean isRewardsMember;
 
 
     public String getFirstName() {
@@ -70,11 +82,14 @@ public class CustomerAccount {
         this.rewardsCard = rewardsCard;
     }
 
-    public boolean isRewrdsMember() {
-        return isRewrdsMember;
+    public boolean isRewardsMember() {
+        return isRewardsMember;
     }
 
-    public void setRewrdsMember(boolean rewrdsMember) {
-        isRewrdsMember = rewrdsMember;
+    public void setRewardsMember(boolean rewrdsMember) {
+        isRewardsMember = rewrdsMember;
+    }
+
+    public CustomerAccount() {
     }
 }

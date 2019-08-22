@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f6d2cbf4-f035-4b19-be32-a39101bcdf90" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../U1M3L5Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M3L5Katas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M3L5Katas/src/main/java/com/company/TelevisionLambda.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M3L5Katas/src/main/java/com/company/TelevisionLambda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M3L5Katas/target/classes/com/company/TelevisionLambda$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M3L5Katas/target/classes/com/company/TelevisionLambda$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../U1M3L5Katas/target/classes/com/company/TelevisionLambda.class" beforeDir="false" afterPath="$PROJECT_DIR$/../U1M3L5Katas/target/classes/com/company/TelevisionLambda.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/ArrayListWhereIsIt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+            <state relative-caret-position="450">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -303,7 +300,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32918397" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32918397" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32918397" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -413,8 +410,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/ArrayListWhereIsIt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        <state relative-caret-position="450">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -2,6 +2,8 @@ package com.company;
 
 public class BaseClass {
 
+    // This is our Parent class
+
     /*
     Shared values
 

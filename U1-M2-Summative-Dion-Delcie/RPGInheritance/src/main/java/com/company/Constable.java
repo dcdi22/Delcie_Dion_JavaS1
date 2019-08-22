@@ -2,6 +2,17 @@ package com.company;
 
 public class Constable extends BaseClass {
 
+    // This is a child class that extends BaseClass and inherits all it's properties and methods
+
+    /*
+    Steps
+    1. Add properties/ variables
+    2. Add any necessary methods
+    3. Generate getters
+    4. Generate setters
+    5. Make a default constructor
+     */
+
     private int strength = 60;
     private int stamina = 60;
     private int speed = 20;

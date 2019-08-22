@@ -3,7 +3,12 @@ package com.company;
 public class CalculatorObject {
 
     // The following are all examples of Method Overloading.
-    // The difference of Data Types in the parameters
+
+    /*
+    Overloading allows different methods to have the same name,
+    but different signatures where the signature can differ by the
+    number of input parameters or type of input parameters or both.
+     */
 
     //    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //    ADD

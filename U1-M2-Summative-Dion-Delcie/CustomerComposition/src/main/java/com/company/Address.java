@@ -2,6 +2,15 @@ package com.company;
 
 public class Address {
 
+    /*
+    Steps
+    1. Add properties/ variables
+    2. Add any necessary methods ~~~
+    3. Generate getters
+    4. Generate setters
+    5. Make a default constructor
+     */
+
     private String street;
     private String street2;
     private String city;
@@ -46,5 +55,8 @@ public class Address {
 
     public void setZipcode(String zipcode) {
         this.zipcode = zipcode;
+    }
+
+    public Address() {
     }
 }
