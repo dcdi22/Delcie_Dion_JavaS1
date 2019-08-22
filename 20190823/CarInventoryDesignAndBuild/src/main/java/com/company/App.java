@@ -170,6 +170,7 @@ public class App {
                     break;
                 case 2:
                     app.delete();
+                    break;
                 case 3:
                     app.listAll();
                     break;
