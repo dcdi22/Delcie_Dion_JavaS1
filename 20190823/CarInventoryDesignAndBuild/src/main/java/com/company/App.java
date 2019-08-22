@@ -179,6 +179,7 @@ public class App {
                     break;
                 case 5:
                     flag = false;
+                    break;
                 default:
                     System.out.println("You have not chosen a valid option from the list ");
             }
