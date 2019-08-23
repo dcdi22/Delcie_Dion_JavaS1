@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6d2cbf4-f035-4b19-be32-a39101bcdf90" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../20190823/DelcieDionU1M3L6PBD/src/main/java/gettingLargest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190823/DelcieDionU1M3L6PBD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/DelcieDionU1M3L6PBD/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/CalculatorObject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/CalculatorObject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/CalculatorObject/target/classes/com/company/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/CalculatorObject/target/classes/com/company/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/CalculatorObject/target/classes/com/company/CalculatorObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/CalculatorObject/target/classes/com/company/CalculatorObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/src/main/java/com/company/ConverterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/src/main/java/com/company/ConverterApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/src/main/java/com/company/ConverterSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/src/main/java/com/company/ConverterSwitch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/target/classes/com/company/ConverterApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/target/classes/com/company/ConverterApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/target/classes/com/company/ConverterSwitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/target/classes/com/company/ConverterSwitch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/IceCreamClassDesign/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/IceCreamClassDesign/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/IceCreamClassDesign/src/main/java/IceCreamFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/IceCreamClassDesign/src/main/java/IceCreamFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/IceCreamClassDesign/src/main/java/IceCreamShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/IceCreamClassDesign/src/main/java/IceCreamShop.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -68,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/ArrayListWhereIsIt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="330">
+              <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,7 +91,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/ArrayListThereOrNot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="285">
               <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -137,6 +148,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,8 +187,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,10 +295,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="513" y="119" width="1167" height="815" extended-state="0" />
+    <frame x="513" y="119" width="1167" height="815" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22755556" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23111111" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -385,7 +396,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/ArrayListThereOrNot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="285">
           <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -395,8 +406,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/ArrayListWhereIsIt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="330">
+          <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

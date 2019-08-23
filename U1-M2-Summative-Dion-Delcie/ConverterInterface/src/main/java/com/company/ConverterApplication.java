@@ -11,17 +11,17 @@ public class ConverterApplication {
 
 
 
-        String monthIf = ifs.convertMonth(13);
-//        System.out.println(monthIf);
+        String monthIf = ifs.convertMonth(11);
+        System.out.println(monthIf);
 
-        String dayIf = ifs.convertDay(8);
-//        System.out.println(dayIf);
+        String dayIf = ifs.convertDay(7);
+        System.out.println(dayIf);
 
-        String monthSw = switches.convertMonth(13);
-//        System.out.println(monthSw);
+        String monthSw = switches.convertMonth(11);
+        System.out.println(monthSw);
 
-        String daySw = switches.convertDay(8);
-//        System.out.println(daySw);
+        String daySw = switches.convertDay(7);
+        System.out.println(daySw);
 
     }
 

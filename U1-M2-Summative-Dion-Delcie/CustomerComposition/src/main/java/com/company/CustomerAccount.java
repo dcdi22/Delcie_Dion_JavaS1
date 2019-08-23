@@ -23,7 +23,7 @@ public class CustomerAccount {
     private Address billingAddress;
 
     private RewardsCard rewardsCard;
-    private boolean isRewardsMember;
+    private boolean isRewardsMember; // is the customer a rewards member
 
 
     public String getFirstName() {
@@ -86,8 +86,8 @@ public class CustomerAccount {
         return isRewardsMember;
     }
 
-    public void setRewardsMember(boolean rewrdsMember) {
-        isRewardsMember = rewrdsMember;
+    public void setRewardsMember(boolean rewardsMember) {
+        isRewardsMember = rewardsMember;
     }
 
     public CustomerAccount() {
