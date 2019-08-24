@@ -218,7 +218,6 @@ public class App {
                     app.listAll();
                     break;
                 case 4:
-                    flag = false;
                     app.switchSearch();
                     break;
                 case 5:

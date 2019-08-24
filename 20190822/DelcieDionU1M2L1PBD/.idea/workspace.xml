@@ -12,9 +12,13 @@
       <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/src/main/java/com/company/ConverterSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/src/main/java/com/company/ConverterSwitch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/target/classes/com/company/ConverterApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/target/classes/com/company/ConverterApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/target/classes/com/company/ConverterSwitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/target/classes/com/company/ConverterSwitch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/CustomerComposition/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/CustomerComposition/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/CustomerComposition/src/main/java/com/company/CustomerAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/CustomerComposition/src/main/java/com/company/CustomerAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/IceCreamClassDesign/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/IceCreamClassDesign/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/IceCreamClassDesign/src/main/java/IceCreamFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/IceCreamClassDesign/src/main/java/IceCreamFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/IceCreamClassDesign/src/main/java/IceCreamShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/IceCreamClassDesign/src/main/java/IceCreamShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/RPGInheritance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/RPGInheritance/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/RPGInheritance/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/RPGInheritance/src/main/java/com/company/App.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -136,7 +140,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="513" />
     <option name="y" value="119" />
     <option name="width" value="1167" />
@@ -295,7 +299,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="513" y="119" width="1167" height="815" extended-state="1" />
+    <frame x="513" y="119" width="1167" height="815" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23111111" />

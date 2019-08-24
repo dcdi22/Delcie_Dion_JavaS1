@@ -2,18 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e56833e0-4321-490c-a52b-f0ab6a3184bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../20190822/U1M3L5Katas/src/main/java/com/company/TelevisionLambda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../20190822/U1M3L5Katas/src/main/java/com/company/Televisions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/carListCsv.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/StatesAndCities.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/src/main/java/com/company/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/src/main/java/com/company/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/src/main/java/com/company/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/statesList.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190820/LargestCities/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190820/LargestCities/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/CalculatorObject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/CalculatorObject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/CalculatorObject/src/main/java/com/company/CalculatorObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/CalculatorObject/src/main/java/com/company/CalculatorObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/src/main/java/com/company/ConverterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/src/main/java/com/company/ConverterApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/IceCreamClassDesign/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/IceCreamClassDesign/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/IceCreamClassDesign/src/main/java/IceCreamFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/IceCreamClassDesign/src/main/java/IceCreamFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/IceCreamClassDesign/src/main/java/IceCreamShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/IceCreamClassDesign/src/main/java/IceCreamShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/RPGInheritance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/RPGInheritance/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/RPGInheritance/src/main/java/com/company/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/RPGInheritance/src/main/java/com/company/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190822/DelcieDionU1M2L1PBD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190822/DelcieDionU1M2L1PBD/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/src/main/java/com/company/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/src/main/java/com/company/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/src/main/java/com/company/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/target/classes/com/company/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/target/classes/com/company/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/target/classes/com/company/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/target/classes/com/company/Car.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/CSVWriteAndRead.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="435">
               <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -43,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Computers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
+            <state relative-caret-position="600">
               <caret line="60" column="94" selection-start-line="60" selection-start-column="94" selection-end-line="60" selection-end-column="94" />
               <folding>
                 <element signature="e#437#438#0" expanded="true" />
@@ -74,7 +83,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/ComputerReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
+            <state relative-caret-position="495">
               <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -86,7 +95,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/XMLWriteAndRead.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
+            <state relative-caret-position="390">
               <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -116,7 +125,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/TelevisionReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="150">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -128,7 +137,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Phones.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
+            <state relative-caret-position="495">
               <caret line="53" column="95" selection-start-line="53" selection-start-column="95" selection-end-line="53" selection-end-column="95" />
               <folding>
                 <element signature="e#211#212#0" expanded="true" />
@@ -159,7 +168,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/PhoneReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="195">
               <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -171,8 +180,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/JSONWriteAndRead.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+            <state relative-caret-position="244">
+              <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -213,9 +222,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="342" />
-    <option name="y" value="113" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="339" />
+    <option name="y" value="901" />
     <option name="width" value="1338" />
     <option name="height" value="818" />
   </component>
@@ -225,6 +234,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -271,8 +282,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -381,10 +390,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="342" y="113" width="1338" height="818" extended-state="0" />
-    <editor active="true" />
+    <frame x="339" y="901" width="1338" height="818" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19675925" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19984567" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -492,7 +500,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/CSVWriteAndRead.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
+        <state relative-caret-position="435">
           <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -502,7 +510,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Computers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
+        <state relative-caret-position="600">
           <caret line="60" column="94" selection-start-line="60" selection-start-column="94" selection-end-line="60" selection-end-column="94" />
           <folding>
             <element signature="e#437#438#0" expanded="true" />
@@ -531,8 +539,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/ComputerReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
+        <state relative-caret-position="495">
           <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/XMLWriteAndRead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -555,7 +573,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/TelevisionReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="150">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -565,7 +583,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Phones.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
+        <state relative-caret-position="495">
           <caret line="53" column="95" selection-start-line="53" selection-start-column="95" selection-end-line="53" selection-end-column="95" />
           <folding>
             <element signature="e#211#212#0" expanded="true" />
@@ -594,18 +612,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/PhoneReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="195">
           <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/XMLWriteAndRead.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -614,8 +622,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/JSONWriteAndRead.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+        <state relative-caret-position="244">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
