@@ -1,0 +1,24 @@
+openapi: 3.0.0
+info:
+  title: Hello, REST
+  description:
+    A program that says hello to user
+  version: 0.0.1
+servers:
+  - url: 'http://localhost:8080'
+    description: Local dev server
+paths:
+  /hello/{name}:
+    get:
+      summary: Says `Hello` plus the users name
+      parameters: 
+        - name: name
+          in: path
+          required: true
+          description: Get the name of the user so we can input it into the String
+          schema:
+            type: string
+            # format: 
+      responses:
+        '200':
+          description: "Hello, {name}"

@@ -2,7 +2,11 @@ package com.company;
 
 import com.opencsv.bean.CsvBindByName;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class City {
+    // add a StateId , state name
 
     @CsvBindByName(column = "City Name")
     private String name;
@@ -10,6 +14,8 @@ public class City {
     private int population;
     @CsvBindByName(column = "Capital")
     private boolean isCapital;
+
+//    private static List<City> cityList = new ArrayList<>();
 
     public City() {
     }

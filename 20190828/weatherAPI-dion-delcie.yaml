@@ -1,0 +1,71 @@
+openapi: 3.0.0
+info:
+  title: REST Calculator
+  description:
+    A simple calculator where you can add, multiple, subtract,  and divide.
+    system.
+  version: 0.0.1
+servers:
+  - url: 'http://localhost:8080'
+    description: Local dev server
+paths:
+  /temp/{zipcode}:
+    get:
+      summary: Retrieves the temp for the zipcode recieved
+      parameters: 
+        - name: zipcode
+          in: path
+          required: true
+          description: zipcode for the get the temp in that area
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Temp, in fahrenheit or celsius
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Weather'
+  /conditions/{zipcode}:
+    get:
+      summary: Retrieves conditions for the zipcode recieved
+      parameters: 
+        - name: zipcode
+          in: path
+          required: true
+          description: zipcode for the get the temp in that area
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Temp, in fahrenheit or celsius, Wind Speed,  Wind direction, skies(i.e sunny, cloudy, partly sunny, etc), precipitation (i.e. rain, snow, mist, none)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Weather'
+components:
+  schemas:
+    Weather:
+      properties:
+        zipcode:
+          type: integer
+        temp:
+          type: integer
+        wind_speed:
+          type: integer
+        wind_direction:
+          type: integer
+        skies:
+          type: string
+        precipitation:
+          type: string
+      required: 
+        - zipcode
+        - temp
+        - wind_speed
+        - wind_direction
+        - skies
+        - precipitation
+  

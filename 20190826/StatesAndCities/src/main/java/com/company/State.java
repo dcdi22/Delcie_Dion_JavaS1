@@ -15,6 +15,15 @@ public class State {
     private City city;
 
     private static List<State> stateList = new ArrayList<>();
+    private static List<City> cityList = new ArrayList<>();
+
+    public static List<City> getCityList() {
+        return cityList;
+    }
+
+    public static void setCityList(List<City> cityList) {
+        State.cityList = cityList;
+    }
 
     public State() {
     }

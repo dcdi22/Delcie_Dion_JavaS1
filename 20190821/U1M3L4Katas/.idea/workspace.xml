@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e56833e0-4321-490c-a52b-f0ab6a3184bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/carListCsv.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/StatesAndCities.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/src/main/java/com/company/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/src/main/java/com/company/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/src/main/java/com/company/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../20190826/StatesAndCities/statesList.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190820/LargestCities/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190820/LargestCities/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190822/DelcieDionU1M2L1PBD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190822/DelcieDionU1M2L1PBD/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/src/main/java/com/company/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/src/main/java/com/company/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/src/main/java/com/company/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/target/classes/com/company/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/target/classes/com/company/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/target/classes/com/company/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/target/classes/com/company/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../20190826/CarInventoryDesignAndBuild /.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190826/CarInventoryDesignAndBuild /.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -222,7 +202,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="339" />
     <option name="y" value="901" />
     <option name="width" value="1338" />
@@ -390,7 +370,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="339" y="901" width="1338" height="818" extended-state="1" />
+    <frame x="339" y="901" width="1338" height="818" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19984567" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

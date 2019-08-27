@@ -1,0 +1,103 @@
+openapi: 3.0.0
+info:
+  title: REST Calculator
+  description:
+    A simple calculator where you can add, multiple, subtract,  and divide.
+    system.
+  version: 0.0.1
+servers:
+  - url: 'http://localhost:8080'
+    description: Local dev server
+paths:
+  /add:
+    post:
+      summary: Takes in two int's and adds them together
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                operand1:
+                  type: integer
+                  format: int64
+                operand2:
+                  type: integer
+                  format: int64
+      responses:
+        '201':
+          description: Sum of operand1 and operand2
+        '400':
+          description: Missing operand.
+        '422':
+          description: Operands are not both numbers
+  /mult:
+    post:
+      summary: Takes in two int's and multiples them together
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                operand1:
+                  type: integer
+                  format: int64
+                operand2:
+                  type: integer
+                  format: int64
+      responses:
+        '201':
+          description: Product of operand1 and operand2
+        '400':
+          description: Missing operand.
+        '422':
+          description: Operands are not both numbers
+  /subtract:
+    post:
+      summary: Takes in two int's and subtracts together
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                operand1:
+                  type: integer
+                  format: int64
+                operand2:
+                  type: integer
+                  format: int64
+      responses:
+        '201':
+          description: Difference of operand1 and operand2
+        '400':
+          description: Missing operand.
+        '422':
+          description: Operands are not both numbers
+  /divide:
+    post:
+      summary: Takes in two int's and divides them
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                operand1:
+                  type: integer
+                  format: int64
+                operand2:
+                  type: integer
+                  format: int64
+      responses:
+        '201':
+          description: Quotient of operand1 and operand2
+        '400':
+          description: Missing operand.
+        '422':
+          description: Operands are not both numbers

@@ -2,27 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cd07736-5441-46ca-8573-7a4a4e89c02d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/carListCsv.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StatesAndCities/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StatesAndCities/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StatesAndCities/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StatesAndCities/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StatesAndCities/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StatesAndCities/StatesAndCities.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StatesAndCities/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StatesAndCities/src/main/java/com/company/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StatesAndCities/src/main/java/com/company/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StatesAndCities/src/main/java/com/company/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StatesAndCities/statesList.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190820/LargestCities/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190820/LargestCities/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StatesAndCities/citiesList.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../20190821/U1M3L4Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190821/U1M3L4Katas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190822/DelcieDionU1M2L1PBD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190822/DelcieDionU1M2L1PBD/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/src/main/java/com/company/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/src/main/java/com/company/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/src/main/java/com/company/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/target/classes/com/company/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/target/classes/com/company/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/target/classes/com/company/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/CarInventoryDesignAndBuild/target/classes/com/company/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StatesAndCities/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StatesAndCities/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StatesAndCities/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StatesAndCities/src/main/java/com/company/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StatesAndCities/src/main/java/com/company/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StatesAndCities/src/main/java/com/company/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StatesAndCities/src/main/java/com/company/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StatesAndCities/src/main/java/com/company/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StatesAndCities/statesList.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../StatesAndCities/statesList.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StatesAndCities/target/classes/com/company/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../StatesAndCities/target/classes/com/company/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StatesAndCities/target/classes/com/company/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/../StatesAndCities/target/classes/com/company/City.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StatesAndCities/target/classes/com/company/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/../StatesAndCities/target/classes/com/company/State.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Car.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -55,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/company/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="205" column="12" selection-start-line="205" selection-start-column="12" selection-end-line="205" selection-end-column="12" />
+            <state relative-caret-position="105">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -96,11 +86,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="291" />
-    <option name="y" value="61" />
-    <option name="width" value="1389" />
-    <option name="height" value="936" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1008" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -108,7 +96,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -155,6 +142,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
     </panes>
   </component>
@@ -258,9 +246,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="291" y="61" width="1389" height="936" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22048998" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07570208" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -269,7 +258,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28199053" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28163266" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39972338" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -308,13 +297,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/carListCsv.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -324,8 +306,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/company/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="205" column="12" selection-start-line="205" selection-start-column="12" selection-end-line="205" selection-end-column="12" />
+        <state relative-caret-position="105">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/company/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
