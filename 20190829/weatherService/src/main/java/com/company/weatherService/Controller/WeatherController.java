@@ -11,7 +11,7 @@ import java.util.List;
 public class WeatherController {
     @RequestMapping(value = "/temp/{zipcode}", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
-    public Temp getTemp(@PathVariable int zipcode) {
+    public Temp getTemp(@PathVariable int zipcode) throws NumberFormatException {
         Temp temp = new Temp();
         /* if zipcode == zipcode from list of zipcodes get
          the temp for that zip and return the temp in F and C */
@@ -20,7 +20,7 @@ public class WeatherController {
 
     @RequestMapping(value = "/conditions/{zipcode}", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
-    public Conditions getCond(@PathVariable int zipcode) {
+    public Conditions getCond(@PathVariable int zipcode) throws NumberFormatException {
         Conditions conditions = new Conditions();
         /* if zipcode == zipcode from list of zipcodes get
          the conditions for that zip and return fahrenheit, celsius, windSpeed
