@@ -1,0 +1,12 @@
+h1 {
+    background-color: aqua;
+}
+
+.waves {
+width: 600px;
+height: 400px;
+background-image: url("./papyrus.png");
+/* background-repeat: no-repeat;
+background-size: cover */
+text-align: center;
+}
