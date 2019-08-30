@@ -35,7 +35,10 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/City'
+                type: array
+                items:
+                  type: object
+
           
   /city/{name}:
     get:
@@ -67,27 +70,28 @@ paths:
       responses:
         '200':
           description: City successfully deleted.
-          
-    put:
-      summary: Updated the entry for the city with the matching city name.
-      parameters: 
-        - name: name
-          in: path
-          required: true
-          description: name of the city you would like to update.
-          schema:
-            type: string
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/City'
-      responses:
-        '200':
-          description: City successfully updated.
-        '422':
-          description: City name on path must match the name in the City object.
+
+         # I made this on accident, may as well keep it. Maybe use later??? 
+    # put: 
+    #   summary: Updated the entry for the city with the matching city name.
+    #   parameters: 
+    #     - name: name
+    #       in: path
+    #       required: true
+    #       description: name of the city you would like to update.
+    #       schema:
+    #         type: string
+    #   requestBody:
+    #     required: true
+    #     content:
+    #       application/json:
+    #         schema:
+    #           $ref: '#/components/schemas/City'
+    #   responses:
+    #     '200':
+    #       description: City successfully updated.
+    #     '422':
+    #       description: City name on path must match the name in the City object.
 components:
   schemas:
     City:
@@ -100,8 +104,11 @@ components:
           type: number
         isCapital:
           type: boolean
+        cityList:
+          type: array
       required: 
         - name
         - state
         - population
         - isCapital
+        - cityList

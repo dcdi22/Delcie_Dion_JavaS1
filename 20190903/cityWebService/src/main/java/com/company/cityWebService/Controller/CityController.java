@@ -9,7 +9,6 @@ import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Random;
 
 @RestController
 public class CityController {
@@ -52,16 +51,16 @@ public class CityController {
     }
 
 
-    @RequestMapping(value = "/city", method = RequestMethod.POST) 
+    @RequestMapping(value = "/city", method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
-    public City createCity(@RequestBody City city) {
-//        return city;
-        City myCity = new City();
-        myCity.setName("Landshtul");
-        myCity.setState("Germany");
-        myCity.setPopulation(6);
-        myCity.setCapital(false);
-        return myCity;
+    public City createCity(@RequestBody @Valid City city) {
+        return city;
+//        City myCity = new City();
+//        myCity.setName("Landshtul");
+//        myCity.setState(null);
+//        myCity.setPopulation(6);
+//        myCity.setCapital(false);
+//        return myCity;
     }
 
     @RequestMapping(value = "/city/{cityName}", method = RequestMethod.DELETE)

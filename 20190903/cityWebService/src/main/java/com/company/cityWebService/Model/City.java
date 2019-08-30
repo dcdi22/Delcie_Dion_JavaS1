@@ -1,9 +1,14 @@
 package com.company.cityWebService.Model;
 
+import javax.validation.constraints.NotNull;
+
 public class City {
 
+    @NotNull( message =  "You need to enter a name")
     private String name;
+    @NotNull( message =  "You need to enter the name of the city's state")
     private String state;
+    @NotNull( message =  "You need to enter the population as a number")
     private int population;
     private boolean isCapital;
 
