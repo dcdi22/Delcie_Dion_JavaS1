@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: Word API
+  description:
+    A simple Magic 8-ball api
+  version: 0.0.1
+servers:
+  - url: 'http://localhost:8080'
+    description: Local dev server
+paths:
+  /magic:
+    post:
+      summary: Retrieves a magic 8-ball answer after question is sent through requestBody
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Answer'
+      responses:
+        '201':
+          description: An answer object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Answer'
+        '400':
+          description: Invalid request syntax.
+components:
+  schemas:
+    Answer:
+      properties:
+        question:
+          type: string
+        answer:
+          type: string
+      required: 
+        - question
+        - answer

@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: Word API
+  description:
+    A simple api that serves up words and their definitions at random
+  version: 0.0.1
+servers:
+  - url: 'http://localhost:8080'
+    description: Local dev server
+paths:
+  /quote:
+    get:
+      summary: Retrieve a word and it's definition at random from a selection of 10 words
+      responses:
+        '200':
+          description: A word and it's definition
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Definition'
+components:
+  schemas:
+    Definition:
+      properties:
+        word:
+          type: string
+        definition:
+          type: string
+      required: 
+        - word
+        - definition
