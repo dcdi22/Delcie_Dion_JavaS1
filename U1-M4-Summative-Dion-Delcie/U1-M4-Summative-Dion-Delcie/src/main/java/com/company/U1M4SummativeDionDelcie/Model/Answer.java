@@ -1,7 +1,10 @@
 package com.company.U1M4SummativeDionDelcie.Model;
 
+import javax.validation.constraints.NotNull;
+
 public class Answer {
 
+    @NotNull ( message = "You must enter a question.")
     private String question;
     private String answer;
 

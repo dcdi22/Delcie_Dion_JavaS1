@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aa91c8e-727a-447b-bce1-f4cd08f01370" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../U1-M4-Summative-Dion-Delcie/U1-M4-Summative-Dion-Delcie/src/main/java/com/company/U1M4SummativeDionDelcie/Controller/Magic8BallController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../U1-M4-Summative-Dion-Delcie/U1-M4-Summative-Dion-Delcie/src/main/java/com/company/U1M4SummativeDionDelcie/Controller/QuoteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../U1-M4-Summative-Dion-Delcie/U1-M4-Summative-Dion-Delcie/src/main/java/com/company/U1M4SummativeDionDelcie/Controller/WordController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../U1-M4-Summative-Dion-Delcie/U1-M4-Summative-Dion-Delcie/src/main/java/com/company/U1M4SummativeDionDelcie/Model/Answer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../U1-M4-Summative-Dion-Delcie/U1-M4-Summative-Dion-Delcie/src/main/java/com/company/U1M4SummativeDionDelcie/Model/Definition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../U1-M4-Summative-Dion-Delcie/U1-M4-Summative-Dion-Delcie/src/main/java/com/company/U1M4SummativeDionDelcie/Model/Quote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/CalculatorObject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/CalculatorObject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../U1-M2-Summative-Dion-Delcie/ConverterInterface/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -88,7 +81,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-50" />
+    <option name="x" value="155" />
     <option name="y" value="376" />
     <option name="width" value="806" />
     <option name="height" value="815" />
@@ -184,7 +177,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-50" y="376" width="806" height="815" extended-state="0" />
+    <frame x="155" y="376" width="806" height="815" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.38743454" />

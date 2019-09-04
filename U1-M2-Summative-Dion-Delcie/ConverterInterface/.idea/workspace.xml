@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd58ef5e-29db-49cd-bd0b-a9a3b51e85fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../U1-M4-Summative-Dion-Delcie/U1-M4-Summative-Dion-Delcie/src/main/java/com/company/U1M4SummativeDionDelcie/Controller/Magic8BallController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../U1-M4-Summative-Dion-Delcie/U1-M4-Summative-Dion-Delcie/src/main/java/com/company/U1M4SummativeDionDelcie/Controller/QuoteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../U1-M4-Summative-Dion-Delcie/U1-M4-Summative-Dion-Delcie/src/main/java/com/company/U1M4SummativeDionDelcie/Controller/WordController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../U1-M4-Summative-Dion-Delcie/U1-M4-Summative-Dion-Delcie/src/main/java/com/company/U1M4SummativeDionDelcie/Model/Answer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../U1-M4-Summative-Dion-Delcie/U1-M4-Summative-Dion-Delcie/src/main/java/com/company/U1M4SummativeDionDelcie/Model/Definition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../U1-M4-Summative-Dion-Delcie/U1-M4-Summative-Dion-Delcie/src/main/java/com/company/U1M4SummativeDionDelcie/Model/Quote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190823/DelcieDionU1M3L6PBD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190823/DelcieDionU1M3L6PBD/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CalculatorObject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CalculatorObject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />

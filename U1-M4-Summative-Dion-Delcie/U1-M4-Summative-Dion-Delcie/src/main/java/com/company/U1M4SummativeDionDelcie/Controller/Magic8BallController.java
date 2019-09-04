@@ -4,13 +4,14 @@ import com.company.U1M4SummativeDionDelcie.Model.Answer;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.*;
 
 @RestController
 public class Magic8BallController {
     @RequestMapping(value = "/magic", method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
-    public Answer getAnAnswer(@RequestBody Answer stats) {
+    public Answer getAnAnswer(@RequestBody @Valid Answer stats) {
         Random rnd = new Random();
         List<Answer> answerList = new ArrayList<>();
         Answer a = new Answer("It is certain");
