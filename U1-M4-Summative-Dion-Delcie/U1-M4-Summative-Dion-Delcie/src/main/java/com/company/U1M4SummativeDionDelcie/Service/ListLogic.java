@@ -1,5 +1,6 @@
 package com.company.U1M4SummativeDionDelcie.Service;
 
+import com.company.U1M4SummativeDionDelcie.Model.Answer;
 import com.company.U1M4SummativeDionDelcie.Model.Definition;
 import com.company.U1M4SummativeDionDelcie.Model.Quote;
 
@@ -44,6 +45,19 @@ public class ListLogic {
         wordList.addAll(Arrays.asList(a, b, c, d, e, f, g, h, i, j));
 
         return wordList;
+    }
+
+    public List<Answer> getAllAnswers() {
+        List<Answer> answerList = new ArrayList<>();
+        Answer a = new Answer("It is certain");
+        Answer b = new Answer("Outlook good.");
+        Answer c = new Answer("Ask again later.");
+        Answer d = new Answer("Reply hazy, try again.");
+        Answer e = new Answer("My sources say no.");
+        Answer f = new Answer("Don't count on it.");
+        answerList.addAll(Arrays.asList(a, b, c, d, e, f));
+
+        return answerList;
     }
 
 }
