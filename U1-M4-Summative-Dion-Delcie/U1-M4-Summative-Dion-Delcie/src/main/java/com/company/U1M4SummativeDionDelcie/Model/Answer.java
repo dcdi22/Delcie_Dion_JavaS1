@@ -11,10 +11,6 @@ public class Answer {
     public Answer() {
     }
 
-    // Maybe get rid of this and replace with default constructor
-    public Answer(String question, Answer answer) {
-    }
-
     public Answer(String question, String answer) {
         this.question = question;
         this.answer = answer;

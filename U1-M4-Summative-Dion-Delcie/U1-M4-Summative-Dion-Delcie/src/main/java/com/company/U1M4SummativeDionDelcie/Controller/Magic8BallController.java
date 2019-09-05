@@ -22,20 +22,23 @@ public class Magic8BallController {
         Answer f = new Answer("Don't count on it.");
         answerList.addAll(Arrays.asList(a, b, c, d, e, f));
 
-        Answer testAnswer = answerList.get(rnd.nextInt(answerList.size()));
+        Answer rndAnswer = answerList.get(rnd.nextInt(answerList.size()));
 
         Answer myAnswer = new Answer();
         myAnswer.setQuestion(stats.getQuestion()); // <<~~ Use this in the final submission code
 //        myAnswer.setQuestion("Am I hungry?");
-        myAnswer.setAnswer(testAnswer.getAnswer());
+        myAnswer.setAnswer(rndAnswer.getAnswer());
 
         return myAnswer;
 
 
 
+
+
+
         /*
         I know this is a summative and should probably be cleaned up but
-        I was hoping to keep all the code I tried out as work to look back on
+        I was hoping to keep all the code I tried out as something to look back on
          */
 
 //        List<Answer> questionsList =  new ArrayList<>();
