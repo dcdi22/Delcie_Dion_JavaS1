@@ -62,7 +62,7 @@ public class CoffeeDaoJdbcTemplateImpl implements CoffeeDao {
                 coffee.getUnit_price(),
                 coffee.getDescription(),
                 coffee.getType());
-        int id = jdbcTemplate.queryForObject("select_last_insert_id()", Integer.class);
+        int id = jdbcTemplate.queryForObject("select last_insert_id()", Integer.class);
         coffee.setId(id);
         return coffee;
     }
@@ -124,9 +124,8 @@ public class CoffeeDaoJdbcTemplateImpl implements CoffeeDao {
         coffee.setName(rs.getString("name"));
         coffee.setCount(rs.getInt("count"));
         coffee.setUnit_price(rs.getDouble("unit_price"));
-//        coffee.getDescription(rs.getString("description"));
-//        coffee.getType(rs.getString("type"));
-        // ^^ Is this not working because they are not `not null`?
+        coffee.setDescription(rs.getString("description"));
+        coffee.setType(rs.getString("type"));
         return coffee;
     }
 }
