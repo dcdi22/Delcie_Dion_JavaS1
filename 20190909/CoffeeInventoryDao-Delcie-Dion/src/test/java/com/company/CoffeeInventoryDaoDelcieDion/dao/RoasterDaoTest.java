@@ -48,7 +48,7 @@ public class RoasterDaoTest {
         roaster.setNote("Hiiiiiiiii");
         roaster = roasterDao.addRoaster(roaster);
 
-        Roaster roaster1 = new Roaster();
+        Roaster roaster1 = roasterDao.getRoaster(roaster.getId());
 
         assertEquals(roaster1, roaster);
 

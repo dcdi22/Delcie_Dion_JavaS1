@@ -31,4 +31,7 @@ public class ConsoleDaoJdbcTemplateImpl implements ConsoleDao {
     public void deleteConsole(int id) {
 
     }
+
+
+
 }

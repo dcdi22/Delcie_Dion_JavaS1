@@ -159,7 +159,7 @@ public class CoffeeDaoTest {
         assertEquals(cList.size(),1);
 
         cList = coffeeDao.getCoffeeByType(coffee1.getType());
-        assertEquals(cList.size(), 2);
+        assertEquals(cList.size(), 1);
     }
 
     @Test
@@ -208,7 +208,7 @@ public class CoffeeDaoTest {
         assertEquals(cList.size(),1);
 
         cList = coffeeDao.getCoffeByRoaster(coffee1.getRoasterId());
-        assertEquals(cList.size(), 2);
+        assertEquals(cList.size(), 1);
     }
 
     @Test

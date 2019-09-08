@@ -35,10 +35,6 @@ public class PublisherDaoTest {
             consoleDao.deleteConsole(c.getId());
         }
 
-        List<Game> gameList = gameDao.getAllGames();
-        for (Game g: gameList) {
-            gameDao.deleteGame(g.getId());
-        }
 
         List<Publisher> publisherList = publisherDao.getAllPublishers();
         for (Publisher p: publisherList) {
@@ -48,6 +44,11 @@ public class PublisherDaoTest {
         List<Type> typeList = typeDao.getAllTypes();
         for (Type t: typeList) {
             typeDao.deleteType(t.getId());
+        }
+
+        List<Game> gameList = gameDao.getAllGames();
+        for (Game g: gameList) {
+            gameDao.deleteGame(g.getId());
         }
     }
 
