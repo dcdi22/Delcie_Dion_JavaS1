@@ -83,7 +83,7 @@ public class ConsoleDaoTest {
 
         List<Console> consoleList = consoleDao.getAllConsoles();
 
-        assertEquals(consoleList, 2);
+        assertEquals(consoleList.size(), 2);
     }
 
     @Test

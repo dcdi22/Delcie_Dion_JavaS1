@@ -30,6 +30,10 @@ public class GameDaoTest {
 
     @Before
     public void setUp() throws Exception {
+        List<Game> gameList = gameDao.getAllGames();
+        for (Game g: gameList) {
+            gameDao.deleteGame(g.getId());
+        }
         List<Console> consoleList = consoleDao.getAllConsoles();
         for (Console c: consoleList) {
             consoleDao.deleteConsole(c.getId());
@@ -46,10 +50,6 @@ public class GameDaoTest {
             typeDao.deleteType(t.getId());
         }
 
-        List<Game> gameList = gameDao.getAllGames();
-        for (Game g: gameList) {
-            gameDao.deleteGame(g.getId());
-        }
     }
 
     @Test
