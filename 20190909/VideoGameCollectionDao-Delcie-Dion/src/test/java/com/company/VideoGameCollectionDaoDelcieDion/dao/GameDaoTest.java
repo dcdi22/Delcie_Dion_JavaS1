@@ -148,24 +148,18 @@ public class GameDaoTest {
         game.setType_id(type.getId());
         game = gameDao.addGame(game);
 
-        game = new Game();
-        game.setConsole_id(console.getId());
-        game.setPublisher_id(publisher.getId());
-        game.setType_id(type.getId());
-        game = gameDao.addGame(game);
-
         Game game1 = new Game();
         game1.setConsole_id(console1.getId());
         game1.setPublisher_id(publisher.getId());
         game1.setType_id(type.getId());
         game1 = gameDao.addGame(game1);
 
-        List<Game> gameList = gameDao.getGamesByConsole(game.getId());
+        List<Game> gameList = gameDao.getGamesByConsole(game.getConsole_id());
 
-        assertEquals(gameList, 1);
+        assertEquals(gameList.size(), 1);
 
-        gameList = gameDao.getGamesByConsole(game1.getId());
-        assertEquals(gameList.size(), 2);
+        gameList = gameDao.getGamesByConsole(game1.getConsole_id());
+        assertEquals(gameList.size(), 1);
         // I FEEL LIKE THIS TEST IS ALL WRONG
 
     }
@@ -198,23 +192,17 @@ public class GameDaoTest {
         game.setType_id(type.getId());
         game = gameDao.addGame(game);
 
-        game = new Game();
-        game.setConsole_id(console.getId());
-        game.setPublisher_id(publisher.getId());
-        game.setType_id(type.getId());
-        game = gameDao.addGame(game);
-
         Game game1 = new Game();
         game1.setConsole_id(console.getId());
         game1.setPublisher_id(publisher1.getId());
         game1.setType_id(type.getId());
         game1 = gameDao.addGame(game1);
 
-        List<Game> gameList = gameDao.getGamesByPublisher(game.getId());
-        assertEquals(gameList, 1);
+        List<Game> gameList = gameDao.getGamesByPublisher(game.getPublisher_id());
+        assertEquals(gameList.size(), 1);
 
-        gameList = gameDao.getGamesByPublisher(game1.getId());
-        assertEquals(gameList.size(), 2);
+        gameList = gameDao.getGamesByPublisher(game1.getPublisher_id());
+        assertEquals(gameList.size(), 1);
     }
 
     @Test
@@ -245,24 +233,18 @@ public class GameDaoTest {
         game.setType_id(type.getId());
         game = gameDao.addGame(game);
 
-        game = new Game();
-        game.setConsole_id(console.getId());
-        game.setPublisher_id(publisher.getId());
-        game.setType_id(type.getId());
-        game = gameDao.addGame(game);
-
         Game game1 = new Game();
         game1.setConsole_id(console.getId());
         game1.setPublisher_id(publisher.getId());
         game1.setType_id(type1.getId());
         game1 = gameDao.addGame(game1);
 
-        List<Game> gameList = gameDao.getGamesByType(game.getId());
+        List<Game> gameList = gameDao.getGamesByType(game.getType_id());
 
-        assertEquals(gameList, 1);
+        assertEquals(gameList.size(), 1);
 
-        gameList = gameDao.getGamesByType(game1.getId());
-        assertEquals(gameList.size(), 2);
+        gameList = gameDao.getGamesByType(game1.getType_id());
+        assertEquals(gameList.size(), 1);
     }
 
     @Test
