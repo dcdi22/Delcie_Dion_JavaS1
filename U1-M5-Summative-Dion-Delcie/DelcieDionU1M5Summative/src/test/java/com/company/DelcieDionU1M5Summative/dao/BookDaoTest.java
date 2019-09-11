@@ -80,7 +80,8 @@ public class BookDaoTest {
 
         Book book = new Book();
         book.setIsbn("34655235342");
-        book.setPublishDate(new Date(1986, 2, 23));
+//        book.setPublishDate(new Date(1986, 2, 23));
+        book.setPublishDate(LocalDate.parse("2015-08-04");
         book.setAuthorId(author.getId());
         book.setTitle("Running With Scissors");
         book.setPublisherId(publisher.getId());
