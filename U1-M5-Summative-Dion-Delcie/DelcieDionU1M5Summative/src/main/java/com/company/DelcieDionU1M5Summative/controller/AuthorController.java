@@ -23,20 +23,29 @@ public class AuthorController {
         return authorDao.addAuthor(author);
     }
 
-    // ============ GET AUTHOR ============
-
-    @RequestMapping(value = "/{id}",method = RequestMethod.GET)
-    @ResponseStatus(value = HttpStatus.OK)
-    public Author getAnAuthor(@PathVariable int id) {
-        return authorDao.getAuthor(id);
-    }
-
     // ============ GET ALL AUTHORS ============
 
     @RequestMapping(method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     public List<Author> getAllAuthors() {
-        return authorDao.getAllAuthors();
+        if (authorDao.getAllAuthors().size() > 0) {
+            return authorDao.getAllAuthors();
+        } else {
+            throw new IllegalArgumentException("No Authors Found.");
+        }
+    }
+
+    // ============ GET AUTHOR ============
+
+    @RequestMapping(value = "/{id}",method = RequestMethod.GET)
+    @ResponseStatus(value = HttpStatus.OK)
+    public Author getAnAuthor(@PathVariable int id) {
+        if (authorDao.getAllAuthors().contains(authorDao.getAuthor(id))) {
+            return authorDao.getAuthor(id);
+        } else {
+            throw new IllegalArgumentException("No Author with that ID found.");
+        }
+
     }
 
     // ============ UPDATE AUTHOR ============
@@ -44,8 +53,13 @@ public class AuthorController {
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     @ResponseStatus(value = HttpStatus.OK)
     public void updateAuthor(@PathVariable int id, @RequestBody Author updatedAuthor) {
-        updatedAuthor.setId(id);
-        authorDao.updateAuthor(updatedAuthor);
+        if (authorDao.getAllAuthors().contains(authorDao.getAuthor(id))) {
+            updatedAuthor.setId(id);
+            authorDao.updateAuthor(updatedAuthor);
+        } else {
+            throw new IllegalArgumentException("Could not update, no author with matching ID.");
+        }
+
     }
 
     // ============ DELETE AUTHOR ============
@@ -53,7 +67,12 @@ public class AuthorController {
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     @ResponseStatus(value = HttpStatus.OK)
     public void deleteAuthor(@PathVariable int id) {
-        authorDao.deleteAuthor(id);
+        if (authorDao.getAllAuthors().contains(authorDao.getAuthor(id))) {
+            authorDao.deleteAuthor(id);
+        } else {
+            throw new IllegalArgumentException("No Author with that ID found.");
+        }
+
     }
 
 }
