@@ -12,7 +12,7 @@ Your solution must have the following structural elements:
 ## Methodology
 
 * You must utilize TDD and Red Green Refactor when developing this project.
-* You must use Pivotal Tracker to track your tasks for this project.
+* You must use Pivotal Tracker to track your tasks for this project. ✘
 
 ## Requirements/Features
 

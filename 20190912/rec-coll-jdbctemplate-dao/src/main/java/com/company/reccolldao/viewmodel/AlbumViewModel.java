@@ -10,6 +10,15 @@ import java.util.*;
 
 public class AlbumViewModel {
 
+    /*
+    private int id;
+    private String title;
+    private int artistId;
+    private LocalDate releaseDate;
+    private int labelId;
+    private BigDecimal listPrice;
+     */
+
     private int id;
     private String title;
     private Artist artist;

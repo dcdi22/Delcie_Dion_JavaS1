@@ -12,7 +12,7 @@ public interface AuthorDao {
 
     Author addAuthor(Author author);
 
-    void updateAuthor(int id);
+    void updateAuthor(Author author);
 
     void deleteAuthor(int id);
 

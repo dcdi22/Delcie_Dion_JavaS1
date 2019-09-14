@@ -1,7 +1,11 @@
 package com.company.DelcieDionU1M5Summative.dao;
 
 import com.company.DelcieDionU1M5Summative.dto.Author;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -18,35 +22,71 @@ public class AuthorDaoJdbcTemplateImpl implements AuthorDao {
             "select * from author";
 
     private static final String INSERT_AUTHOR_SQL=
-            "insert into author (fisrt_name, last_name, street, city, state, postal_code, phone, email) values (?,?,?,?,?,?,?,?)";
+            "insert into author (first_name, last_name, street, city, state, postal_code, phone, email) values (?,?,?,?,?,?,?,?)";
 
     private static final String UPDATE_AUTHOR_SQL=
-            ""
+            "update author set first_name = ?, last_name = ?, street = ?, city = ?, state = ?, postal_code = ?, phone = ?, email = ? where author_id = ?";
 
+    private static final String DELETE_AUTHOR_SQL=
+            "delete from author where author_id = ?";
+
+    private JdbcTemplate jdbcTemplate;
+
+    @Autowired
+    public AuthorDaoJdbcTemplateImpl(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
 
     @Override
     public Author getAuthor(int id) {
-        return null;
+        try{
+            return jdbcTemplate.queryForObject(SELECT_AUTHOR_SQL, this::mapRowToAuthor, id);
+        } catch (EmptyResultDataAccessException e) {
+            return null;
+        }
     }
 
     @Override
     public List<Author> getAllAuthors() {
-        return null;
+        return jdbcTemplate.query(SELECT_ALL_AUTHORS_SQL, this::mapRowToAuthor);
     }
 
     @Override
+    @Transactional
     public Author addAuthor(Author author) {
-        return null;
+        jdbcTemplate.update(INSERT_AUTHOR_SQL,
+                author.getFirstName(),
+                author.getLastName(),
+                author.getStreet(),
+                author.getCity(),
+                author.getState(),
+                author.getPostalCode(),
+                author.getPhone(),
+                author.getEmail());
+        int id = jdbcTemplate.queryForObject("select last_insert_id()", Integer.class);
+        author.setId(id);
+        return author;
     }
 
     @Override
-    public void updateAuthor(int id) {
-
+    @Transactional
+    public void updateAuthor(Author author) {
+        jdbcTemplate.update(UPDATE_AUTHOR_SQL,
+                author.getFirstName(),
+                author.getLastName(),
+                author.getStreet(),
+                author.getCity(),
+                author.getState(),
+                author.getPostalCode(),
+                author.getPhone(),
+                author.getEmail(),
+                author.getId());
     }
 
     @Override
+    @Transactional
     public void deleteAuthor(int id) {
-
+        jdbcTemplate.update(DELETE_AUTHOR_SQL, id);
     }
 
     /*

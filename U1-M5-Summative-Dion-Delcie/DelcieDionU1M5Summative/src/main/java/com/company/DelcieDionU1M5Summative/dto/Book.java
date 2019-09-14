@@ -10,7 +10,8 @@ book_id int not null auto_increment primary key,
     price decimal(5,2) not null
  */
 
-import java.util.Date;
+import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class Book {
@@ -27,16 +28,16 @@ public class Book {
 
     private int id;
     private String isbn;
-    private Date publishDate;
+    private LocalDate publishDate;
     private int authorId;
     private String title;
     private int publisherId;
-    private double price; // Change out with BigDecimal
+    private BigDecimal price; // Change out with BigDecimal
 
     public Book() {
     }
 
-    public Book(int id, String isbn, Date publishDate, int authorId, String title, int publisherId, double price) {
+    public Book(int id, String isbn, LocalDate publishDate, int authorId, String title, int publisherId, BigDecimal price) {
         this.id = id;
         this.isbn = isbn;
         this.publishDate = publishDate;
@@ -62,11 +63,11 @@ public class Book {
         this.isbn = isbn;
     }
 
-    public Date getPublishDate() {
+    public LocalDate getPublishDate() {
         return publishDate;
     }
 
-    public void setPublishDate(Date publishDate) {
+    public void setPublishDate(LocalDate publishDate) {
         this.publishDate = publishDate;
     }
 
@@ -94,11 +95,11 @@ public class Book {
         this.publisherId = publisherId;
     }
 
-    public double getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(BigDecimal price) {
         this.price = price;
     }
 
@@ -110,10 +111,10 @@ public class Book {
         return id == book.id &&
                 authorId == book.authorId &&
                 publisherId == book.publisherId &&
-                Double.compare(book.price, price) == 0 &&
                 isbn.equals(book.isbn) &&
                 publishDate.equals(book.publishDate) &&
-                title.equals(book.title);
+                title.equals(book.title) &&
+                price.equals(book.price);
     }
 
     @Override

@@ -124,7 +124,7 @@ public class AuthorDaoTest {
         author.setFirstName("Waris");
         author.setLastName("Dirie");
 
-        authorDao.updateAuthor(author.getId());
+        authorDao.updateAuthor(author);
 
         Author author1 = authorDao.getAuthor(author.getId());
 

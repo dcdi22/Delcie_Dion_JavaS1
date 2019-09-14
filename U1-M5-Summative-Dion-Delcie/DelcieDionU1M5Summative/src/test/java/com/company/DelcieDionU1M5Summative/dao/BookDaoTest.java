@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
@@ -29,14 +30,14 @@ public class BookDaoTest {
 
     @Before
     public void setUp() throws Exception {
-        List<Author> authors = authorDao.getAllAuthors();
-        for (Author a: authors) {
-            authorDao.deleteAuthor(a.getId());
-        }
-
         List<Book> books = bookDao.getAllBooks();
         for (Book b: books) {
             bookDao.deleteBook(b.getId());
+        }
+
+        List<Author> authors = authorDao.getAllAuthors();
+        for (Author a: authors) {
+            authorDao.deleteAuthor(a.getId());
         }
 
         List<Publisher> publishers = publisherDao.getAllPublishers();
@@ -81,11 +82,11 @@ public class BookDaoTest {
         Book book = new Book();
         book.setIsbn("34655235342");
 //        book.setPublishDate(new Date(1986, 2, 23));
-        book.setPublishDate(LocalDate.parse("2015-08-04");
+        book.setPublishDate(LocalDate.of(2015,9,23));
         book.setAuthorId(author.getId());
         book.setTitle("Running With Scissors");
         book.setPublisherId(publisher.getId());
-        book.setPrice(12.99);
+        book.setPrice(new BigDecimal("12.99"));
         book = bookDao.addBook(book);
 
         Book book1 = bookDao.getBook(book.getId());
@@ -124,20 +125,20 @@ public class BookDaoTest {
 
         Book book = new Book();
         book.setIsbn("34655235342");
-        book.setPublishDate(new Date(1986, 2, 23));
+        book.setPublishDate(LocalDate.of(2015,9,23));
         book.setAuthorId(author.getId());
         book.setTitle("Running With Scissors");
         book.setPublisherId(publisher.getId());
-        book.setPrice(12.99);
+        book.setPrice(new BigDecimal("12.99"));
         book = bookDao.addBook(book);
 
         book = new Book();
         book.setIsbn("657657545");
-        book.setPublishDate(new Date(1990, 7, 20));
+        book.setPublishDate(LocalDate.of(2016,7,23));
         book.setAuthorId(author.getId());
         book.setTitle("Dry");
         book.setPublisherId(publisher.getId());
-        book.setPrice(16.99);
+        book.setPrice(new BigDecimal("16.99"));
         bookDao.addBook(book);
 
         List<Book> bookList = bookDao.getAllBooks();
@@ -170,15 +171,15 @@ public class BookDaoTest {
 
         Book book = new Book();
         book.setIsbn("34655235342");
-        book.setPublishDate(new Date(1986, 2, 23));
+        book.setPublishDate(LocalDate.of(2015,9,23));
         book.setAuthorId(author.getId());
         book.setTitle("Running With Scissors");
         book.setPublisherId(publisher.getId());
-        book.setPrice(12.99);
+        book.setPrice(new BigDecimal("12.99"));
         book = bookDao.addBook(book);
 
         book.setIsbn("657657545");
-        book.setPublishDate(new Date(1990, 7, 20));
+        book.setPublishDate(LocalDate.of(2016,7,23));
         book.setAuthorId(author.getId());
         book.setTitle("Dry");
 
@@ -236,29 +237,29 @@ public class BookDaoTest {
 
         Book book = new Book();
         book.setIsbn("34655235342");
-        book.setPublishDate(new Date(1986, 2, 23));
+        book.setPublishDate(LocalDate.of(2016,7,23));
         book.setAuthorId(author.getId());
         book.setTitle("Running With Scissors");
         book.setPublisherId(publisher.getId());
-        book.setPrice(12.99);
+        book.setPrice(new BigDecimal("12.99"));
         book = bookDao.addBook(book);
 
         book = new Book();
         book.setIsbn("657657545");
-        book.setPublishDate(new Date(1990, 7, 20));
+        book.setPublishDate(LocalDate.of(2015,7,23));
         book.setAuthorId(author.getId());
         book.setTitle("Dry");
         book.setPublisherId(publisher.getId());
-        book.setPrice(16.99);
+        book.setPrice(new BigDecimal("16.99"));
         bookDao.addBook(book);
 
         book = new Book();
         book.setIsbn("23180090");
-        book.setPublishDate(new Date(1999, 7, 20));
+        book.setPublishDate(LocalDate.of(2014,7,23));
         book.setAuthorId(author1.getId());
         book.setTitle("Desert Flower");
         book.setPublisherId(publisher.getId());
-        book.setPrice(16.99);
+        book.setPrice(new BigDecimal("16.99"));
         bookDao.addBook(book);
 
         List<Book> bookList = bookDao.getBooksByAuthor(author.getId());
