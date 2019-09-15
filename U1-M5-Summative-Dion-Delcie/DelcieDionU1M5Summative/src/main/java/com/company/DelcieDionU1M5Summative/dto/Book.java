@@ -1,15 +1,7 @@
 package com.company.DelcieDionU1M5Summative.dto;
 
-/*
-book_id int not null auto_increment primary key,
-    isbn varchar (15) not null,
-    publish_date date not null,
-    author_id int not null,
-    title varchar (70) not null,
-    publisher_id int not null,
-    price decimal(5,2) not null
- */
-
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Objects;
@@ -27,12 +19,15 @@ public class Book {
      */
 
     private int id;
+    @Size(min=1, max=15)
     private String isbn;
     private LocalDate publishDate;
     private int authorId;
+    @Size(min=1, max=70)
     private String title;
     private int publisherId;
-    private BigDecimal price; // Change out with BigDecimal
+    @Digits(integer = 5, fraction = 2)
+    private BigDecimal price;
 
     public Book() {
     }

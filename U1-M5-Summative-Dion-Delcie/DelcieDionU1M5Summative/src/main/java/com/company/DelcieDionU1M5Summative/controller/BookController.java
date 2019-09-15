@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -27,7 +28,7 @@ public class BookController {
 
     @RequestMapping( method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
-    public Book addBook(@RequestBody Book book){
+    public Book addBook(@RequestBody @Valid Book book){
         return bookDao.addBook(book);
     }
 
@@ -67,7 +68,7 @@ public class BookController {
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     @ResponseStatus(value = HttpStatus.OK)
-    public void updateBook(@PathVariable int id, @RequestBody Book book) {
+    public void updateBook(@PathVariable int id, @RequestBody @Valid Book book) {
         if (bookDao.getAllBooks().contains(bookDao.getBook(id))) {
             book.setId(id);
             bookDao.updateBook(book);

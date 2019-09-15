@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -19,7 +20,7 @@ public class AuthorController {
 
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
-    public Author addAuthor(@RequestBody Author author) {
+    public Author addAuthor(@RequestBody @Valid Author author) {
         return authorDao.addAuthor(author);
     }
 
@@ -52,7 +53,7 @@ public class AuthorController {
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     @ResponseStatus(value = HttpStatus.OK)
-    public void updateAuthor(@PathVariable int id, @RequestBody Author updatedAuthor) {
+    public void updateAuthor(@PathVariable int id, @RequestBody @Valid Author updatedAuthor) {
         if (authorDao.getAllAuthors().contains(authorDao.getAuthor(id))) {
             updatedAuthor.setId(id);
             authorDao.updateAuthor(updatedAuthor);

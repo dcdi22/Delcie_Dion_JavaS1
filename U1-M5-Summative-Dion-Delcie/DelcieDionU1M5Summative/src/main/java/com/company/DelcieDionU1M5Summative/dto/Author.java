@@ -13,18 +13,27 @@ author_id int not null auto_increment primary key,
     email varchar(60) not null
  */
 
+import javax.validation.constraints.Size;
 import java.util.Objects;
 
 public class Author {
 
     private int id;
+    @Size(min=1, max = 50)
     private String firstName;
+    @Size(min=1, max = 50)
     private String lastName;
+    @Size(min=1, max = 50)
     private String street;
+    @Size(min=1, max = 50)
     private String city;
+    @Size(min=1, max = 2)
     private String state;
+    @Size(min=1, max = 25)
     private String postalCode;
+    @Size(min=1, max = 15)
     private String phone;
+    @Size(min=1, max = 60)
     private String email;
 
     public Author() {
