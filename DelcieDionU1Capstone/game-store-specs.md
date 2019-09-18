@@ -55,6 +55,10 @@ This system must manage the inventory of video games, game consoles, and t-shirt
        1. The endpoint returns invoice data based on the invoice table below.
        1. All invoice calculations must be done in the Service Layer.
        1. You must create a DAO for both taxes and processing fees.
+       `` need to do controller tests ``
+       ```
+       https://www.baeldung.com/integration-testing-in-spring
+       ```
 
 You must use the following database structure:
 

@@ -60,7 +60,7 @@ public class GameDaoJdbcTemplateImpl implements GameDao {
         try {
             return jdbcTemplate.queryForObject(SELECT_GAME_SQL, this::mapRowToGame, gameId);
         } catch (EmptyResultDataAccessException e) {
-            throw null;
+            return null;
         }
     }
 
@@ -112,8 +112,8 @@ public class GameDaoJdbcTemplateImpl implements GameDao {
     }
 
     @Override
-    public void deleteGame(int id) {
-        jdbcTemplate.update(DELETE_GAME_SQL, id);
+    public void deleteGame(int gameId) {
+        jdbcTemplate.update(DELETE_GAME_SQL, gameId);
 
     }
 

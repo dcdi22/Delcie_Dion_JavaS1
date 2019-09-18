@@ -20,6 +20,6 @@ public interface GameDao {
 
     void updateGame(Game game);
 
-    void deleteGame(int id);
+    void deleteGame(int gameId);
 
 }
