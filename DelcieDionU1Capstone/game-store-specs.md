@@ -27,17 +27,17 @@ Your solution must have the following structural elements:
 This system must manage the inventory of video games, game consoles, and t-shirts.
 
 * Your REST API must allow the end user to:
-    1. Games:
+    1. Games: ✔︎
        1. Perform standard CRUD operations for Games
        1. Search for Games by Studio  `getGameByStudio`
        1. Search for Games by ESRB Rating `getGameByEsrb`
        1. Search for Games by Title `getGameByTitle`
        1. You must create a separate DAO for Games
-    1. Consoles:
+    1. Consoles: ✔︎
        1. Perform standard CRUD operations for Consoles
        1. Search for Consoles by Manufacturer  `getConsoleByManufacturer`
        1. You must create a separate DAO for Consoles
-    1. T-Shirts:
+    1. T-Shirts: ✔︎
        1. Perform standard CRUD operations for T-Shirts
        1. Search for T-Shirts by Color `getTShirtByColor`
        1. Search for T-Shirts by Size `getTshirtBySize`
@@ -126,10 +126,18 @@ create table if not exists invoice (
     total decimal(5,2) not null
 );
 ```
+1. Name
+1. Street
+1. City
+1. State
+1. Zip
+1. Item Type
+1. Item ID
+1. Quantity
 
 ## Test Requirements
 
-1. You must test all routes using MockMVC.
+1. You must test all routes using MockMVC. 
     - This includes testing for both expected return values, and expected controller failures (4xx and 5xx status codes)
 1. Test all service layer methods
     - You should have 100% code coverage of the service layer
@@ -145,9 +153,9 @@ create table if not exists invoice (
 2. Sales tax does not apply to any processing fees for an invoice.
 3. The processing fee is applied only once per order regardless of the number of items in the order unless the number of items on the order is greater than 10 in which case an *additional* processing fee of $15.49 is applied to the order. 
 4. The order process logic must properly update the quantity on hand for the item in the order.
-5. Order quantity must be greater than zero.
+5. Order quantity must be greater than zero. `@Valid` , `@Min = 1` , `in ViewModel`
 6. Order quantity must be less than or equal to the number of items on hand in inventory.
-7. Order must contain a valid state code.
+7. Order must contain a valid state code. `@Valid in Controller` 
 8. The REST API must properly handle and report all violations of business rules.
 
 ## Data
