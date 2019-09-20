@@ -142,20 +142,20 @@ create table if not exists invoice (
 1. Test all service layer methods
     - You should have 100% code coverage of the service layer
     - These should be unit tests -- in other words, they should employ mocking
-1. You must have integration tests for all DAOs
+1. You must have integration tests for all DAOs ✔︎
     - These should test the basic CRUD operations
     - It should also test any custom methods you've defined (such as findByCategory)
 
 
 ## Business Rules
 
-1. Sales tax applies only to the cost of the items.
-2. Sales tax does not apply to any processing fees for an invoice.
-3. The processing fee is applied only once per order regardless of the number of items in the order unless the number of items on the order is greater than 10 in which case an *additional* processing fee of $15.49 is applied to the order. 
-4. The order process logic must properly update the quantity on hand for the item in the order.
-5. Order quantity must be greater than zero. `@Valid` , `@Min = 1` , `in ViewModel`
-6. Order quantity must be less than or equal to the number of items on hand in inventory.
-7. Order must contain a valid state code. `@Valid in Controller` 
+1. Sales tax applies only to the cost of the items. ✔︎
+2. Sales tax does not apply to any processing fees for an invoice. ✔︎
+3. The processing fee is applied only once per order regardless of the number of items in the order unless the number of items on the order is greater than 10 in which case an *additional* processing fee of $15.49 is applied to the order. ✔︎
+4. The order process logic must properly update the quantity on hand for the item in the order. ✔︎
+5. Order quantity must be greater than zero. `@Valid` , `@Min = 1` , `in ViewModel` ✔︎
+6. Order quantity must be less than or equal to the number of items on hand in inventory. ✔︎
+7. Order must contain a valid state code. `@Valid in Controller` ✔︎
 8. The REST API must properly handle and report all violations of business rules.
 
 ## Data

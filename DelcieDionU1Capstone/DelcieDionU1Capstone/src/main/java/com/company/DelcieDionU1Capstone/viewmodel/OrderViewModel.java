@@ -1,5 +1,6 @@
 package com.company.DelcieDionU1Capstone.viewmodel;
 
+import javax.validation.constraints.Min;
 import java.util.Objects;
 
 public class OrderViewModel {
@@ -22,6 +23,7 @@ public class OrderViewModel {
     private String zipcode;
     private String itemType;
     private int itemId;
+    @Min(value = 1, message = "Order quantity must be greater than zero")
     private int quantity;
 
     public String getName() {

@@ -13,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 @Component
@@ -41,27 +42,11 @@ public class ServiceLayer {
     //
 
     @Transactional
-    public InvoiceViewModel addInvoice(OrderViewModel orderViewModel) {
-
-        /*
-        private int invoiceId;
-    private String name;
-    private String street;
-    private String city;
-    private String state;
-    private String zipcode;
-    private String itemType;
-    private int itemId;
-    private BigDecimal unitPrice;
-    private int quantity;
-    private BigDecimal subtotal;
-    private BigDecimal tax;
-    private BigDecimal processingFee;
-    private BigDecimal total;
-         */
+    public Invoice addInvoice(OrderViewModel orderViewModel) {
 
         // Persist Invoice
         Invoice i = new Invoice();
+//        InvoiceViewModel i = new InvoiceViewModel();
         i.setName(orderViewModel.getName());
         i.setStreet(orderViewModel.getStreet());
         i.setCity(orderViewModel.getCity());
@@ -71,46 +56,62 @@ public class ServiceLayer {
         i.setItemId(orderViewModel.getItemId());
         i.setQuantity(orderViewModel.getQuantity());
 
-        // get unit_price, using a switch statement, 2 switch statements?
+        // GET UNIT PRICE
         switch(orderViewModel.getItemType()) {
-            case "Game":
+            case "Games":
                 if (gameDao.getAllGames().contains(gameDao.getGame(orderViewModel.getItemId()))) {
                     i.setUnitPrice(gameDao.getGame(orderViewModel.getItemId()).getPrice());
-//                    gameDao.getGame(orderViewModel.getItemId()).getPrice();
 
-                    // update Quantity
-                    Game gameUpdated = gameDao.getGame(orderViewModel.getItemId());
-                    int userQuantity = orderViewModel.getQuantity();
-                    int dbQuantity = gameUpdated.getQuantity();
-                    int newQuantity = dbQuantity - userQuantity;
-                    gameUpdated.setQuantity(newQuantity);
-                    gameDao.updateGame(gameUpdated);
+                    // Grab Quantities
+                    int dbQuantity = gameDao.getGame(orderViewModel.getItemId()).getQuantity();
+                    int orderQuantity = orderViewModel.getQuantity();
+
+                    if (orderQuantity <= dbQuantity) {
+                        Game gameUpdated = gameDao.getGame(orderViewModel.getItemId());
+                        int newQuantity = dbQuantity - orderQuantity;
+                        gameUpdated.setQuantity(newQuantity);
+                        gameDao.updateGame(gameUpdated);
+                    } else {
+                        throw new IllegalArgumentException("There's not enough stock in our inventory to match the quantity you asked for");
+                    }
                 }
                 break;
-            case "Console":
+            case "Consoles":
                 if (consoleDao.getAllConsoles().contains(consoleDao.getConsole(orderViewModel.getItemId()))) {
                     i.setUnitPrice(consoleDao.getConsole(orderViewModel.getItemId()).getPrice());
 
-                    // update Quantity
-                    Console consoleUpdated = consoleDao.getConsole(orderViewModel.getItemId());
-                    int userQuantity = orderViewModel.getQuantity();
-                    int dbQuantity = consoleUpdated.getQuantity();
-                    int newQuantity = dbQuantity - userQuantity;
-                    consoleUpdated.setQuantity(newQuantity);
-                    consoleDao.updateConsole(consoleUpdated);
+
+                    // Grab Quantities
+                    int dbQuantity = consoleDao.getConsole(orderViewModel.getItemId()).getQuantity();
+                    int orderQuantity = orderViewModel.getQuantity();
+
+                    if (orderQuantity <= dbQuantity) {
+                        Console consoleUpdated = consoleDao.getConsole(orderViewModel.getItemId());
+                        int newQuantity = dbQuantity - orderQuantity;
+                        consoleUpdated.setQuantity(newQuantity);
+                        consoleDao.updateConsole(consoleUpdated);
+                    } else {
+                        throw new IllegalArgumentException("There's not enough stock in our inventory to match the quantity you asked for");
+                    }
                 }
                 break;
-            case "TShirt":
+            case "T-Shirts":
                 if (tShirtDao.getAllShirts().contains(tShirtDao.getShirt(orderViewModel.getItemId()))) {
                     i.setUnitPrice(tShirtDao.getShirt(orderViewModel.getItemId()).getPrice());
 
-                    // update Quantity
-                    TShirt shirtUpdated = tShirtDao.getShirt(orderViewModel.getItemId());
-                    int userQuantity = orderViewModel.getQuantity();
-                    int dbQuantity = shirtUpdated.getQuantity();
-                    int newQuantity = dbQuantity - userQuantity;
-                    shirtUpdated.setQuantity(newQuantity);
-                    tShirtDao.updateShirt(shirtUpdated);
+
+                    // Grab Quantities
+                    int dbQuantity = tShirtDao.getShirt(orderViewModel.getItemId()).getQuantity();
+                    int orderQuantity = orderViewModel.getQuantity();
+
+                    if (orderQuantity <= dbQuantity) {
+                        TShirt shirtUpdated = tShirtDao.getShirt(orderViewModel.getItemId());
+                        int newQuantity = dbQuantity - orderQuantity;
+                        shirtUpdated.setQuantity(newQuantity);
+                        tShirtDao.updateShirt(shirtUpdated);
+                    } else {
+                        throw new IllegalArgumentException("There's not enough stock in our inventory to match the quantity you asked for");
+                    }
                 }
                 break;
             default:
@@ -118,26 +119,28 @@ public class ServiceLayer {
 //                System.out.println("Not a valid Item Type");
         }
 
-        // get subtotal
+        // GET SUBTOTAL
         BigDecimal myPrice = i.getUnitPrice();
         BigDecimal myQuantity = new BigDecimal(i.getQuantity());
         BigDecimal mySubTotal = myPrice.multiply(myQuantity);
 
         i.setSubtotal(mySubTotal);
 
-        // get tax
+        // GET TAX
         if (salesTaxRateDao.getAllSTR().contains(salesTaxRateDao.getSTR(orderViewModel.getState()))) {
             BigDecimal myRate = salesTaxRateDao.getSTR(orderViewModel.getState()).getRate();
             BigDecimal myTax = mySubTotal.multiply(myRate);
 
             i.setTax(myTax);
+        } else {
+            throw new IllegalArgumentException("No state matching your input");
         }
 
-        // get processing_fee
+        // GET PROCESSING FEE
         if (processingFeeDao.getAllProcessingFees().contains(processingFeeDao.getProcessingFee(orderViewModel.getItemType()))) {
             if (orderViewModel.getQuantity() > 10) {
                 BigDecimal ogFee = processingFeeDao.getProcessingFee(orderViewModel.getItemType()).getFee();
-                BigDecimal myFee = ogFee.multiply(new BigDecimal("15.49"));
+                BigDecimal myFee = ogFee.add(new BigDecimal("15.49"));
 
                 i.setProcessingFee(myFee);
             } else {
@@ -147,21 +150,45 @@ public class ServiceLayer {
             }
         }
 
-        // get total
+        // GET TOTAL
+
         BigDecimal myTotal = mySubTotal.add(i.getTax()).add(i.getProcessingFee());
 
         i.setTotal(myTotal);
 
         i = invoiceDao.addInvoice(i);
-
-        InvoiceViewModel vm = new InvoiceViewModel();
-        vm.setInvoiceId(i.getInvoiceId());
-        return vm;
+        return i;
 
 
     }
 
+    public InvoiceViewModel getInvoice(int invoiceId) {
 
+        // Get the invoice object first
+        Invoice invoice = invoiceDao.getInvoice(invoiceId);
+
+        // Return Build
+        return buildInvoiceViewModel(invoice);
+
+    }
+
+    public List<InvoiceViewModel> getAllInvoices() {
+
+        List<Invoice> invoiceList = invoiceDao.getAllInvoices();
+
+        List<InvoiceViewModel> ivmList = new ArrayList<>();
+
+        for(Invoice invoice: invoiceList) {
+            InvoiceViewModel ivm = buildInvoiceViewModel(invoice);
+            ivmList.add(ivm);
+        }
+
+        return ivmList;
+
+    }
+
+
+    // Come back and add update and delete if you think you need it
 
     //
     // Console Api
@@ -260,6 +287,31 @@ public class ServiceLayer {
     }
 
 
+    // HELPER METHODS
+    // The build is like our rowMapper
+    private InvoiceViewModel buildInvoiceViewModel(Invoice invoice) {
+
+        // Assemble the InvoiceViewModel
+        InvoiceViewModel ivm = new InvoiceViewModel();
+        ivm.setInvoiceId(invoice.getInvoiceId());
+        ivm.setName(invoice.getName());
+        ivm.setStreet(invoice.getStreet());
+        ivm.setCity(invoice.getCity());
+        ivm.setState(invoice.getState());
+        ivm.setZipcode(invoice.getZipcode());
+        ivm.setItemType(invoice.getItemType());
+        ivm.setItemId(invoice.getItemId());
+        ivm.setUnitPrice(invoice.getUnitPrice());
+        ivm.setQuantity(invoice.getQuantity());
+        ivm.setSubtotal(invoice.getSubtotal());
+        ivm.setTax(invoice.getTax());
+        ivm.setProcessingFee(invoice.getProcessingFee());
+        ivm.setTotal(invoice.getTotal());
+
+        // return InvoiceViewModel
+        return ivm;
+
+    }
 
 
 }
