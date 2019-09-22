@@ -151,7 +151,6 @@ public class ServiceLayer {
         }
 
         // GET TOTAL
-
         BigDecimal myTotal = mySubTotal.add(i.getTax()).add(i.getProcessingFee());
 
         i.setTotal(myTotal);
