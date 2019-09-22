@@ -2,6 +2,7 @@ package com.company.DelcieDionU1Capstone.service;
 
 import com.company.DelcieDionU1Capstone.dao.*;
 import com.company.DelcieDionU1Capstone.dto.*;
+import com.company.DelcieDionU1Capstone.viewmodel.InvoiceViewModel;
 import com.company.DelcieDionU1Capstone.viewmodel.OrderViewModel;
 import org.junit.Before;
 import org.junit.Test;
@@ -53,7 +54,7 @@ public class ServiceLayerTest {
         ovm.setItemId(1);
         ovm.setQuantity(1);
 
-        service.addInvoice(ovm);
+//        service.addInvoice(ovm);
 
         //example complete and calculated Invoice to be returned
         Invoice i = new Invoice();
@@ -117,13 +118,15 @@ public class ServiceLayerTest {
         //adding invoice
         i = invoiceDao.addInvoice(i);
 
-        List<Invoice>
+        List<InvoiceViewModel> iList = service.getAllInvoices();
+        assertEquals(1, iList.size());
+        assertEquals(i, iList.get(0));
     }
 
     // ✷ ##################################
 
     @Test
-    public void addConsole() {
+    public void addGetConsole() {
         Console console = new Console();
         console.setModel("PS4");
         console.setManufacturer("Sony");
@@ -168,20 +171,6 @@ public class ServiceLayerTest {
     }
 
     @Test
-    public void getConsole() {
-        Console console = new Console();
-        console.setModel("PS4");
-        console.setManufacturer("Sony");
-        console.setMemoryAmount("A lot");
-        console.setProcessor("AMD");
-        console.setPrice(new BigDecimal("50.00"));
-        console.setQuantity(1);
-        console = service.addConsole(console);
-        Console fromService = service.getConsole(console.getConsoleId());
-        assertEquals(console, fromService);
-    }
-
-    @Test
     public void updateConsole() {
         Console console = new Console();
         console.setModel("PS4");
@@ -202,66 +191,209 @@ public class ServiceLayerTest {
 
     @Test
     public void deleteConsole() {
+        Console console = new Console();
+        console.setConsoleId(1);
+        ArgumentCaptor<Integer> integerCaptor = ArgumentCaptor.forClass(Integer.class);
+        // What does doNothing do again, I mean besides the obviously
+        //but what's the point of doingNothing, like why even have the
+        // line of code if it doesNothing, is it capturing the value or what?
+        doNothing().when(consoleDao).deleteConsole(integerCaptor.capture());
+        service.deleteConsole(1);
+        verify(consoleDao, times(1)).deleteConsole(integerCaptor.getValue());
+        assertEquals(1, integerCaptor.getValue().intValue());
+
     }
 
+    // ✷ ##################################
+
     @Test
-    public void addGame() {
+    public void addGetGame() {
+        Game game = new Game();
+        game.setTitle("Horizon Zero Dawn");
+        game.setEsrbRating("T");
+        game.setDescription("post-apocalypse");
+        game.setPrice(new BigDecimal("20.65"));
+        game.setStudio("Guerrilla Games");
+        game.setQuantity(1);
+        game = service.addGame(game);
+        Game fromService = service.getGame(game.getGameId());
+        assertEquals(game, fromService);
     }
 
     @Test
     public void getAllGames() {
+        Game game = new Game();
+        game.setTitle("Horizon Zero Dawn");
+        game.setEsrbRating("T");
+        game.setDescription("post-apocalypse");
+        game.setPrice(new BigDecimal("20.65"));
+        game.setStudio("Guerrilla Games");
+        game.setQuantity(1);
+        game = service.addGame(game);
+        List<Game> gList = service.getAllGames();
+        assertEquals(1, gList.size());
+        assertEquals(game, gList.get(0));
     }
 
     @Test
     public void getGamesByStudio() {
+        Game game = new Game();
+        game.setTitle("Horizon Zero Dawn");
+        game.setEsrbRating("T");
+        game.setDescription("post-apocalypse");
+        game.setPrice(new BigDecimal("20.65"));
+        game.setStudio("Guerrilla Games");
+        game.setQuantity(1);
+        game = service.addGame(game);
+        List<Game> gList = service.getGamesByStudio("Guerrilla Games");
+        assertEquals(1, gList.size());
+        assertEquals(game, gList.get(0));
     }
 
     @Test
     public void getGamesByEsrb() {
+        Game game = new Game();
+        game.setTitle("Horizon Zero Dawn");
+        game.setEsrbRating("T");
+        game.setDescription("post-apocalypse");
+        game.setPrice(new BigDecimal("20.65"));
+        game.setStudio("Guerrilla Games");
+        game.setQuantity(1);
+        game = service.addGame(game);
+        List<Game> gList = service.getGamesByEsrb("T");
+        assertEquals(1, gList.size());
+        assertEquals(game, gList.get(0));
     }
 
     @Test
     public void getGamesByTitle() {
-    }
-
-    @Test
-    public void getGame() {
+        Game game = new Game();
+        game.setTitle("Horizon Zero Dawn");
+        game.setEsrbRating("T");
+        game.setDescription("post-apocalypse");
+        game.setPrice(new BigDecimal("20.65"));
+        game.setStudio("Guerrilla Games");
+        game.setQuantity(1);
+        game = service.addGame(game);
+        List<Game> gList = service.getGamesByTitle("Horizon Zero Dawn");
+        assertEquals(1, gList.size());
+        assertEquals(game, gList.get(0));
     }
 
     @Test
     public void updateGame() {
+        Game game = new Game();
+        game.setTitle("Horizon Zero Dawn");
+        game.setEsrbRating("T");
+        game.setDescription("post-apocalypse");
+        game.setPrice(new BigDecimal("20.65"));
+        game.setStudio("Guerrilla Games");
+        game.setQuantity(1);
+        game = service.addGame(game);
+
+        ArgumentCaptor<Game> gameCaptor = ArgumentCaptor.forClass(Game.class);
+        doNothing().when(gameDao).updateGame(gameCaptor.capture());
+        service.updateGame(game);
+        verify(gameDao, times(1)).updateGame(gameCaptor.getValue());
+        Game game2 = gameCaptor.getValue();
+        assertEquals(game, game2);
     }
 
     @Test
     public void deleteGame() {
+        Game game = new Game();
+        game.setGameId(1);
+        ArgumentCaptor<Integer> integerCaptor = ArgumentCaptor.forClass(Integer.class);
+        doNothing().when(gameDao).deleteGame(integerCaptor.capture());
+        service.deleteGame(1);
+        verify(gameDao, times(1)).deleteGame(integerCaptor.getValue());
+        assertEquals(1, integerCaptor.getValue().intValue());
     }
 
+    // ✷ ##################################
+
     @Test
-    public void addShirt() {
+    public void addGetShirt() {
+        TShirt shirt = new TShirt();
+        shirt.setSize("S");
+        shirt.setColor("Blue");
+        shirt.setDescription("Small Blue Shirt");
+        shirt.setPrice(new BigDecimal("12.00"));
+        shirt.setQuantity(1);
+        shirt = service.addShirt(shirt);
+        TShirt fromService = service.getShirt(shirt.getTshirtId());
+        assertEquals(shirt, fromService);
     }
 
     @Test
     public void getAllShirts() {
+        TShirt shirt = new TShirt();
+        shirt.setSize("S");
+        shirt.setColor("Blue");
+        shirt.setDescription("Small Blue Shirt");
+        shirt.setPrice(new BigDecimal("12.00"));
+        shirt.setQuantity(1);
+        shirt = service.addShirt(shirt);
+        List<TShirt> sList = service.getAllShirts();
+        assertEquals(1, sList.size());
+        assertEquals(shirt, sList.get(0));
     }
 
     @Test
     public void getShirtByColor() {
+        TShirt shirt = new TShirt();
+        shirt.setSize("S");
+        shirt.setColor("Blue");
+        shirt.setDescription("Small Blue Shirt");
+        shirt.setPrice(new BigDecimal("12.00"));
+        shirt.setQuantity(1);
+        shirt = service.addShirt(shirt);
+        List<TShirt> sList = service.getShirtByColor("Blue");
+        assertEquals(1, sList.size());
+        assertEquals(shirt, sList.get(0));
     }
 
     @Test
     public void getShirtBySize() {
-    }
-
-    @Test
-    public void getShirt() {
+        TShirt shirt = new TShirt();
+        shirt.setSize("S");
+        shirt.setColor("Blue");
+        shirt.setDescription("Small Blue Shirt");
+        shirt.setPrice(new BigDecimal("12.00"));
+        shirt.setQuantity(1);
+        shirt = service.addShirt(shirt);
+        List<TShirt> sList = service.getShirtBySize("S");
+        assertEquals(1, sList.size());
+        assertEquals(shirt, sList.get(0));
     }
 
     @Test
     public void updateShirt() {
+        TShirt shirt = new TShirt();
+        shirt.setSize("S");
+        shirt.setColor("Blue");
+        shirt.setDescription("Small Blue Shirt");
+        shirt.setPrice(new BigDecimal("12.00"));
+        shirt.setQuantity(1);
+        shirt = service.addShirt(shirt);
+
+        ArgumentCaptor<TShirt> shirtCaptor = ArgumentCaptor.forClass(TShirt.class);
+        doNothing().when(tShirtDao).updateShirt(shirtCaptor.capture());
+        service.updateShirt(shirt);
+        verify(tShirtDao, times(1)).updateShirt(shirtCaptor.getValue());
+        TShirt shirt2 = shirtCaptor.getValue();
+        assertEquals(shirt, shirt2);
     }
 
     @Test
     public void deleteShirt() {
+        TShirt shirt = new TShirt();
+        shirt.setTshirtId(1);
+        ArgumentCaptor<Integer> integerCaptor =  ArgumentCaptor.forClass(Integer.class);
+        doNothing().when(tShirtDao).deleteShirt(integerCaptor.capture());
+        service.deleteShirt(1);
+        verify(tShirtDao, times(1)).deleteShirt(integerCaptor.getValue());
+        assertEquals(1, integerCaptor.getValue().intValue());
     }
 
     // HELPER METHODS
@@ -269,7 +401,7 @@ public class ServiceLayerTest {
         // What's the point of this line?
         invoiceDao = mock(InvoiceDaoJdbcTemplateImpl.class);
 
-        Invoice invoice = new Invoice();
+        InvoiceViewModel invoice = new InvoiceViewModel();
         invoice.setInvoiceId(1);
         invoice.setName("Delcie");
         invoice.setStreet("Street");

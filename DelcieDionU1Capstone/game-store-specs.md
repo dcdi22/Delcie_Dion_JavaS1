@@ -16,10 +16,10 @@ Your solution must have the following structural elements:
 * You must manage your work in Pivotal Tracker
 * You must create stories and epics
 * You must estimate your work using story points
-* You must use a Test Driven Development approach (inluding Red/Green/Refactor) for your code
-* You must use JUnit for unit and integration tests
-* Your design must include a Service Layer
-* Your unit test suite should utilize mock objects where appropriate
+* You must use a Test Driven Development approach (inluding Red/Green/Refactor) for your code✔︎
+* You must use JUnit for unit and integration tests✔︎
+* Your design must include a Service Layer✔︎
+* Your unit test suite should utilize mock objects where appropriate✔︎
 * You should utilize JSR303 for input validation
 
 ## Requirements/Features
@@ -43,7 +43,7 @@ This system must manage the inventory of video games, game consoles, and t-shirt
        1. Search for T-Shirts by Size `getTshirtBySize`
        1. You must create a separate DAO for T-Shirts
     1. Purchasing Items: ` serviceLayer & controller `
-       1. User should be able to purchase items in inventory by supplying the following information to the endpoint:
+       1. User should be able to purchase items in inventory by supplying the following information to the endpoint:✔︎
 	       1. Name
 	       1. Street
 	       1. City
@@ -52,9 +52,9 @@ This system must manage the inventory of video games, game consoles, and t-shirt
 	       1. Item Type
 	       1. Item ID
 	       1. Quantity
-       1. The endpoint returns invoice data based on the invoice table below.
-       1. All invoice calculations must be done in the Service Layer.
-       1. You must create a DAO for both taxes and processing fees.
+       1. The endpoint returns invoice data based on the invoice table below.✔︎
+       1. All invoice calculations must be done in the Service Layer.✔︎
+       1. You must create a DAO for both taxes and processing fees.✔︎
        `` need to do controller tests ``
        ```
        https://www.baeldung.com/integration-testing-in-spring
@@ -139,7 +139,7 @@ create table if not exists invoice (
 
 1. You must test all routes using MockMVC. 
     - This includes testing for both expected return values, and expected controller failures (4xx and 5xx status codes)
-1. Test all service layer methods
+1. Test all service layer methods✔︎
     - You should have 100% code coverage of the service layer
     - These should be unit tests -- in other words, they should employ mocking
 1. You must have integration tests for all DAOs ✔︎
