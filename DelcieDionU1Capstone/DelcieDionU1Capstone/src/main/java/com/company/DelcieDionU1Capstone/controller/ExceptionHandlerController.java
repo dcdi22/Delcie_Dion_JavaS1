@@ -21,11 +21,10 @@ public class ExceptionHandlerController {
 
     // ILLEGAL ARGUMENT EXCEPTION
     @ExceptionHandler(value = {IllegalArgumentException.class})
-    @ResponseStatus(HttpStatus.UNPROCESSABLE_ENTITY)
-
+    @ResponseStatus(HttpStatus.NOT_FOUND)
     public ResponseEntity<VndErrors> outOfRangeException(IllegalArgumentException e, WebRequest webRequest) {
         VndErrors errors = new VndErrors(webRequest.toString(), e.getMessage());
-        ResponseEntity<VndErrors> responseEntity = new ResponseEntity<>(errors, HttpStatus.UNPROCESSABLE_ENTITY);
+        ResponseEntity<VndErrors> responseEntity = new ResponseEntity<>(errors, HttpStatus.NOT_FOUND);
         return responseEntity;
     }
 

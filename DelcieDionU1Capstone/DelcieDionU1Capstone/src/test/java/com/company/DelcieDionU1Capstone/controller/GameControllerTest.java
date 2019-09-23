@@ -74,7 +74,7 @@ public class GameControllerTest {
 
         int idForGameThatDoesNotExist = 100;
 
-        when(service.getGame(idForGameThatDoesNotExist)).thenReturn(game);
+        when(service.getGame(idForGameThatDoesNotExist)).thenThrow(new IllegalArgumentException("Could not find game with matching Id"));
 
         this.mockMvc.perform(get("/game/" + idForGameThatDoesNotExist))
                 .andDo(print())
@@ -284,8 +284,7 @@ public class GameControllerTest {
         .content(inputJson)
         .contentType(MediaType.APPLICATION_JSON))
                 .andDo(print())
-                .andExpect(status().isOk())
-                .andExpect(content().json(outputJson));
+                .andExpect(status().isOk());
     }
 
     @Test

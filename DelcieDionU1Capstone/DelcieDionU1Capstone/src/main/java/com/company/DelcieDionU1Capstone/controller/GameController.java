@@ -90,12 +90,12 @@ public class GameController {
     @RequestMapping(value = "/{gameId}", method = RequestMethod.PUT)
     @ResponseStatus(value = HttpStatus.OK)
     public void updateGame(@RequestBody Game game, @PathVariable int gameId) {
-        if (service.getAllGames().contains(service.getGame(gameId))) {
+//        if (service.getAllGames().contains(service.getGame(gameId))) {
             game.setGameId(gameId);
             service.updateGame(game);
-        } else {
-            throw new IllegalArgumentException("Can't update, no game with a matching ID");
-        }
+//        } else {
+//            throw new IllegalArgumentException("Can't update, no game with a matching ID");
+//        }
     }
 
     // =========== DELETE GAME ===========

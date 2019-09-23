@@ -67,12 +67,12 @@ public class ConsoleController {
     @RequestMapping(value = "/{consoleId}", method = RequestMethod.PUT)
     @ResponseStatus(value = HttpStatus.OK)
     public void updateConsole(@RequestBody Console console, @PathVariable int consoleId) {
-        if (service.getAllConsoles().contains(service.getConsole(consoleId))) {
+//        if (service.getAllConsoles().contains(service.getConsole(consoleId))) {
             console.setConsoleId(consoleId);
             service.updateConsole(console);
-        } else {
-            throw new IllegalArgumentException("Can't update, no console with a matching ID");
-        }
+//        } else {
+//            throw new IllegalArgumentException("Can't update, no console with a matching ID");
+//        }
     }
 
     // =========== DELETE CONSOLE ===========

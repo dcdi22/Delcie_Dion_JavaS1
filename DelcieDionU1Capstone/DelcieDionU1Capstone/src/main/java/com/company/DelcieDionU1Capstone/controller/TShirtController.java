@@ -84,12 +84,12 @@ public class TShirtController {
     @RequestMapping(value = "/{tshirtId}", method = RequestMethod.PUT)
     @ResponseStatus(value = HttpStatus.OK)
     public void updateShirt(@RequestBody TShirt shirt, @PathVariable int tshirtId) {
-        if (service.getAllShirts().contains(service.getShirt(tshirtId))) {
+//        if (service.getAllShirts().contains(service.getShirt(tshirtId))) {
             shirt.setTshirtId(tshirtId);
             service.updateShirt(shirt);
-        } else {
-            throw new IllegalArgumentException("No tshirt with matching ID to update");
-        }
+//        } else {
+//            throw new IllegalArgumentException("No tshirt with matching ID to update");
+//        }
     }
 
     // ========= DELETE TSHIRT =========

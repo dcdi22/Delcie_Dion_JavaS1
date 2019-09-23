@@ -20,7 +20,7 @@ Your solution must have the following structural elements:
 * You must use JUnit for unit and integration tests✔︎
 * Your design must include a Service Layer✔︎
 * Your unit test suite should utilize mock objects where appropriate✔︎
-* You should utilize JSR303 for input validation
+* You should utilize JSR303 for input validation `@Valid in controllers and dtos`
 
 ## Requirements/Features
 
@@ -150,7 +150,7 @@ create table if not exists invoice (
 ## Business Rules
 
 1. Sales tax applies only to the cost of the items. ✔︎
-2. Sales tax does not apply to any processing fees for an invoice. ✔︎
+2. Sales tax does not apply to any processing fees for an invoice. ✔︎ FIX TAX
 3. The processing fee is applied only once per order regardless of the number of items in the order unless the number of items on the order is greater than 10 in which case an *additional* processing fee of $15.49 is applied to the order. ✔︎
 4. The order process logic must properly update the quantity on hand for the item in the order. ✔︎
 5. Order quantity must be greater than zero. `@Valid` , `@Min = 1` , `in ViewModel` ✔︎

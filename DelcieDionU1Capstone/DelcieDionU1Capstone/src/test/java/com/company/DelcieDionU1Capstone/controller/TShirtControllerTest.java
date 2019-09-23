@@ -73,7 +73,7 @@ public class TShirtControllerTest {
 
         int idForShirtThatDoesNotExist = 100;
 
-        when(service.getShirt(idForShirtThatDoesNotExist)).thenReturn(shirt);
+        when(service.getShirt(idForShirtThatDoesNotExist)).thenThrow(new IllegalArgumentException("Could not find shirt with matching Id"));
 
         this.mockMvc.perform(get("/tshirt/" + idForShirtThatDoesNotExist))
                 .andDo(print())
@@ -228,14 +228,13 @@ public class TShirtControllerTest {
         shirt.setTshirtId(8);
 
         String inputJson = mapper.writeValueAsString(shirt);
-        String outputJson = mapper.writeValueAsString(shirt);
+//        String outputJson = mapper.writeValueAsString(shirt);
 
         this.mockMvc.perform(put("/tshirt/8")
         .content(inputJson)
         .contentType(MediaType.APPLICATION_JSON))
                 .andDo(print())
-                .andExpect(status().isOk())
-                .andExpect(content().json(outputJson));
+                .andExpect(status().isOk());
     }
 
     @Test
