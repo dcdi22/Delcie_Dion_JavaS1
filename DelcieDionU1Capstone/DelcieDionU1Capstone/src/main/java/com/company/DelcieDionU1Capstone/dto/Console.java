@@ -1,16 +1,35 @@
 package com.company.DelcieDionU1Capstone.dto;
 
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.Objects;
 
 public class Console {
 
+    /*
+    console_id int(11) not null auto_increment primary key,
+    model varchar(50) not null,
+    manufacturer varchar(50) not null,
+    memory_amount varchar(20),
+    processor varchar(20),
+    price decimal(5, 2) not null,
+    quantity int(11) not null
+     */
+
+    @Size(max = 11)
     private int consoleId;
+    @Size(min = 1, max = 50)
     private String model;
+    @Size(min = 1, max = 50)
     private String manufacturer;
+    @Size(max = 20)
     private String memoryAmount;
+    @Size(max = 20)
     private String processor;
+    @Digits(integer = 5, fraction = 2)
     private BigDecimal price;
+    @Size(max = 11)
     private int quantity;
 
     public Console() { }

@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -21,7 +22,7 @@ public class GameController {
 
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
-    public Game addGame(@RequestBody Game game) {
+    public Game addGame(@RequestBody @Valid Game game) {
         return service.addGame(game);
     }
 
@@ -89,7 +90,7 @@ public class GameController {
 
     @RequestMapping(value = "/{gameId}", method = RequestMethod.PUT)
     @ResponseStatus(value = HttpStatus.OK)
-    public void updateGame(@RequestBody Game game, @PathVariable int gameId) {
+    public void updateGame(@RequestBody @Valid Game game, @PathVariable int gameId) {
 //        if (service.getAllGames().contains(service.getGame(gameId))) {
             game.setGameId(gameId);
             service.updateGame(game);

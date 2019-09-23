@@ -1,23 +1,56 @@
 package com.company.DelcieDionU1Capstone.dto;
 
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.Objects;
 
 public class Invoice {
 
+    /*
+    invoice_id int(11) not null auto_increment primary key,
+    name varchar(80) not null,
+    street varchar(30) not null,
+    city varchar(30) not null,
+    state varchar(30) not null,
+    zipcode varchar(5) not null,
+    item_type varchar(20) not null,
+    item_id int(11) not null,
+    unit_price decimal(5,2) not null,
+    quantity int(11) not null,
+    subtotal decimal(5,2) not null,
+    tax decimal(5,2) not null,
+    processing_fee decimal (5,2) not null,
+    total decimal(5,2) not null
+     */
+
+    @Size(max = 11)
     private int invoiceId;
+    @Size(min = 1, max = 80)
     private String name;
+    @Size(min = 1, max = 30)
     private String street;
+    @Size(min = 1, max = 30)
     private String city;
+    @Size(min = 1, max = 30)
     private String state;
+    @Size(min = 1, max = 5)
     private String zipcode;
+    @Size(min = 1, max = 20)
     private String itemType;
+    @Size(max = 11)
     private int itemId;
+    @Digits(integer = 5, fraction = 2)
     private BigDecimal unitPrice;
+    @Size(max = 11)
     private int quantity;
+    @Digits(integer = 5, fraction = 2)
     private BigDecimal subtotal;
+    @Digits(integer = 5, fraction = 2)
     private BigDecimal tax;
+    @Digits(integer = 5, fraction = 2)
     private BigDecimal processingFee;
+    @Digits(integer = 5, fraction = 2)
     private BigDecimal total;
 
     public Invoice() {

@@ -1,11 +1,20 @@
 package com.company.DelcieDionU1Capstone.dto;
 
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.Objects;
 
 public class ProcessingFee {
 
+    /*
+    product_type varchar(20) not null,
+    fee decimal (4,2)
+     */
+
+    @Size(min = 1, max = 20)
     private String productType;
+    @Digits(integer = 4, fraction = 2)
     private BigDecimal fee;
 
     public ProcessingFee() {

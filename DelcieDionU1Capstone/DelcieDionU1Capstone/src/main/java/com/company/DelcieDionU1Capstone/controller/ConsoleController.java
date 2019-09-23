@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -22,7 +23,7 @@ public class ConsoleController {
 
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
-    public Console addConsole(@RequestBody Console console) {
+    public Console addConsole(@RequestBody @Valid Console console) {
         return service.addConsole(console);
     }
 
@@ -66,7 +67,7 @@ public class ConsoleController {
 
     @RequestMapping(value = "/{consoleId}", method = RequestMethod.PUT)
     @ResponseStatus(value = HttpStatus.OK)
-    public void updateConsole(@RequestBody Console console, @PathVariable int consoleId) {
+    public void updateConsole(@RequestBody @Valid Console console, @PathVariable int consoleId) {
 //        if (service.getAllConsoles().contains(service.getConsole(consoleId))) {
             console.setConsoleId(consoleId);
             service.updateConsole(console);

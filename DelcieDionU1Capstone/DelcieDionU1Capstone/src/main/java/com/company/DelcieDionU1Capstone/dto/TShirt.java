@@ -1,15 +1,32 @@
 package com.company.DelcieDionU1Capstone.dto;
 
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.Objects;
 
 public class TShirt {
 
+    /*
+    t_shirt_id int(11) not null auto_increment primary key,
+    size varchar(20) not null,
+    color varchar(20) not null,
+    description varchar(255) not null,
+    price decimal(5,2) not null,
+    quantity int(11) not null
+     */
+
+    @Size(max = 11)
     private int tshirtId;
+    @Size(min = 1, max = 20)
     private String size;
+    @Size(min = 1, max = 20)
     private String color;
+    @Size(min = 1, max = 255)
     private String description;
+    @Digits(integer = 5, fraction = 2)
     private BigDecimal price;
+    @Size(max = 11)
     private int quantity;
 
     public TShirt() {

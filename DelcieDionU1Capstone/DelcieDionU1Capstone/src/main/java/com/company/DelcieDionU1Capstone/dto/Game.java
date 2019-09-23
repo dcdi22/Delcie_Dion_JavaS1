@@ -1,5 +1,7 @@
 package com.company.DelcieDionU1Capstone.dto;
 
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.Objects;
 
@@ -15,12 +17,19 @@ public class Game {
     quantity int(11)
      */
 
+    @Size(max = 11)
     private int gameId;
+    @Size(min = 1, max = 50)
     private String title;
+    @Size(min = 1, max = 50)
     private String esrbRating;
+    @Size(min = 1, max = 255)
     private String description;
+    @Digits(integer = 5, fraction = 2)
     private BigDecimal price;
+    @Size(min = 1, max = 50)
     private String studio;
+    @Size(max = 11)
     private int quantity;
 
     public Game() {

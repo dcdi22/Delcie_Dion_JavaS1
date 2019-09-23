@@ -1,11 +1,20 @@
 package com.company.DelcieDionU1Capstone.dto;
 
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 import java.util.Objects;
 
 public class SalesTaxRate {
 
+    /*
+    state char(2) not null,
+    rate decimal(3,2) not null
+     */
+
+    @Size(max = 2)
     private String state;
+    @Digits(integer = 3, fraction = 2)
     private BigDecimal rate;
 
     public SalesTaxRate() {
