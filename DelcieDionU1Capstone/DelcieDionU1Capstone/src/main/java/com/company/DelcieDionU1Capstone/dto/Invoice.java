@@ -24,7 +24,7 @@ public class Invoice {
     total decimal(5,2) not null
      */
 
-    @Size(max = 11)
+//    @Size(max = 11)
     private int invoiceId;
     @Size(min = 1, max = 80)
     private String name;
@@ -38,11 +38,11 @@ public class Invoice {
     private String zipcode;
     @Size(min = 1, max = 20)
     private String itemType;
-    @Size(max = 11)
+//    @Size(max = 11)
     private int itemId;
     @Digits(integer = 5, fraction = 2)
     private BigDecimal unitPrice;
-    @Size(max = 11)
+//    @Size(max = 11)
     private int quantity;
     @Digits(integer = 5, fraction = 2)
     private BigDecimal subtotal;

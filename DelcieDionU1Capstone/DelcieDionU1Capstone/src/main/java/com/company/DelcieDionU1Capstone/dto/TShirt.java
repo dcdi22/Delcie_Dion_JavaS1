@@ -16,7 +16,7 @@ public class TShirt {
     quantity int(11) not null
      */
 
-    @Size(max = 11)
+//    @Size(max = 11)
     private int tshirtId;
     @Size(min = 1, max = 20)
     private String size;
@@ -26,7 +26,7 @@ public class TShirt {
     private String description;
     @Digits(integer = 5, fraction = 2)
     private BigDecimal price;
-    @Size(max = 11)
+//    @Size(max = 11)
     private int quantity;
 
     public TShirt() {

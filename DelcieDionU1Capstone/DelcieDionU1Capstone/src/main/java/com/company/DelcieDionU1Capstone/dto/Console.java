@@ -17,7 +17,7 @@ public class Console {
     quantity int(11) not null
      */
 
-    @Size(max = 11)
+//    @Size(max = 11)
     private int consoleId;
     @Size(min = 1, max = 50)
     private String model;
@@ -29,7 +29,7 @@ public class Console {
     private String processor;
     @Digits(integer = 5, fraction = 2)
     private BigDecimal price;
-    @Size(max = 11)
+//    @Size(max = 11)
     private int quantity;
 
     public Console() { }

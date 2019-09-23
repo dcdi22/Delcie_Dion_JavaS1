@@ -17,7 +17,7 @@ public class Game {
     quantity int(11)
      */
 
-    @Size(max = 11)
+//    @Size(max = 11)
     private int gameId;
     @Size(min = 1, max = 50)
     private String title;
@@ -29,7 +29,7 @@ public class Game {
     private BigDecimal price;
     @Size(min = 1, max = 50)
     private String studio;
-    @Size(max = 11)
+//    @Size(max = 11)
     private int quantity;
 
     public Game() {
