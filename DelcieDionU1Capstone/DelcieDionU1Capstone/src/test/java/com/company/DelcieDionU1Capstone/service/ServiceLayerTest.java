@@ -28,7 +28,6 @@ public class ServiceLayerTest {
 
     @Before
     public void setUp() throws Exception {
-        // What does this do???
         setUpConsoleDaoMock();
         setUpGameDaoMock();
         setUpInvoiceDaoMock();
