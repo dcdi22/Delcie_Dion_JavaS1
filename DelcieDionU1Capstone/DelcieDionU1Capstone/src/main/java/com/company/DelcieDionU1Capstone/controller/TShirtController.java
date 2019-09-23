@@ -72,11 +72,11 @@ public class TShirtController {
     @RequestMapping(value = "/{tshirtId}", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     public TShirt getShirt(@PathVariable int tshirtId) {
-        if (service.getAllShirts().contains(service.getShirt(tshirtId))) {
+//        if (service.getAllShirts().contains(service.getShirt(tshirtId))) {
             return service.getShirt(tshirtId);
-        } else {
-            throw new IllegalArgumentException("No tshirt with matching ID");
-        }
+//        } else {
+//            throw new IllegalArgumentException("No tshirt with matching ID");
+//        }
     }
 
     // ========= UPDATE TSHIRT =========
@@ -97,9 +97,9 @@ public class TShirtController {
     @RequestMapping(value = "/{tshirtId}", method = RequestMethod.DELETE)
     @ResponseStatus(value = HttpStatus.OK)
     public void deleteShirt(@PathVariable int tshirtId) {
-        if (service.getAllShirts().contains(service.getShirt(tshirtId))) {
+//        if (service.getAllShirts().contains(service.getShirt(tshirtId))) {
             service.deleteShirt(tshirtId);
-        }
+//        }
     }
 
 }

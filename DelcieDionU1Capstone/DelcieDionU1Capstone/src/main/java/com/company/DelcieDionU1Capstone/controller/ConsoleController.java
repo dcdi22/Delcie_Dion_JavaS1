@@ -55,11 +55,11 @@ public class ConsoleController {
     @RequestMapping(value = "/{consoleId}", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     public Console getConsole(@PathVariable int consoleId) {
-        if (service.getAllConsoles().contains(service.getConsole(consoleId))) {
+//        if (service.getAllConsoles().contains(service.getConsole(consoleId))) {
             return service.getConsole(consoleId);
-        } else {
-            throw new IllegalArgumentException("No consoles with matching ID");
-        }
+//        } else {
+//            throw new IllegalArgumentException("No consoles with matching ID");
+//        }
     }
 
     // =========== UPDATE CONSOLE ===========
@@ -80,11 +80,11 @@ public class ConsoleController {
     @RequestMapping( value = "/{consoleId}", method = RequestMethod.DELETE)
     @ResponseStatus( value = HttpStatus.OK)
     public void deleteConsole(@PathVariable int consoleId) {
-        if (service.getAllConsoles().contains(service.getConsole(consoleId))) {
+//        if (service.getAllConsoles().contains(service.getConsole(consoleId))) {
             service.deleteConsole(consoleId);
-        } else {
-            throw new IllegalArgumentException("No matching ID, nothing to delete");
-        }
+//        } else {
+//            throw new IllegalArgumentException("No matching ID, nothing to delete");
+//        }
     }
 
 

@@ -77,12 +77,12 @@ public class GameController {
 
     @RequestMapping(value = "/{gameId}", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
-    public Game getgame(@PathVariable int gameId) {
-        if (service.getAllGames().contains(service.getGame(gameId))) {
+    public Game getGame(@PathVariable int gameId) {
+//        if (service.getAllGames().contains(service.getGame(gameId))) {
             return service.getGame(gameId);
-        } else {
-            throw new IllegalArgumentException("No games with matching ID");
-        }
+//        } else {
+//            throw new IllegalArgumentException("No games with matching ID");
+//        }
     }
 
     // =========== UPDATE GAME ===========
@@ -103,11 +103,11 @@ public class GameController {
     @RequestMapping( value = "/{gameId}", method = RequestMethod.DELETE)
     @ResponseStatus( value = HttpStatus.OK)
     public void deleteGame(@PathVariable int gameId) {
-        if (service.getAllGames().contains(service.getGame(gameId))) {
+//        if (service.getAllGames().contains(service.getGame(gameId))) {
             service.deleteGame(gameId);
-        } else {
-            throw new IllegalArgumentException("No matching ID, nothing to delete");
-        }
+//        } else {
+//            throw new IllegalArgumentException("No matching ID, nothing to delete");
+//        }
     }
 
 

@@ -19,6 +19,7 @@ import java.util.List;
 @RequestMapping(produces = "application/vnd.error+json")
 public class ExceptionHandlerController {
 
+    // ILLEGAL ARGUMENT EXCEPTION
     @ExceptionHandler(value = {IllegalArgumentException.class})
     @ResponseStatus(HttpStatus.UNPROCESSABLE_ENTITY)
 
@@ -28,7 +29,7 @@ public class ExceptionHandlerController {
         return responseEntity;
     }
 
-    // methodArgumentNotValid
+    // METHOD ARGUMENT NOT VALID
     @ExceptionHandler({MethodArgumentNotValidException.class})
     public ResponseEntity<VndErrors> notEnoughValues(MethodArgumentNotValidException e, WebRequest request) {
         //Binding result holds the validation result

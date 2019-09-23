@@ -13,8 +13,7 @@ public class Console {
     private BigDecimal price;
     private int quantity;
 
-    public Console() {
-    }
+    public Console() { }
 
     public Console(int consoleId, String model, String manufacturer, String memoryAmount, String processor, BigDecimal price, int quantity) {
         this.consoleId = consoleId;
