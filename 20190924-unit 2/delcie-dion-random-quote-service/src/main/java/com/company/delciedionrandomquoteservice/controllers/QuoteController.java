@@ -42,10 +42,8 @@ public class QuoteController {
 
     @GetMapping(value="/quotes")
     public Object getQuotes() {
-        List<String> quoteList = new ArrayList<>();
         Random rnd = new Random();
-        Object randomQuote = quoteList.get(rnd.nextInt(quoteList.size()));
-        return randomQuote;
+        return randomQuote.get(rnd.nextInt(randomQuote.size()));
     }
 
 }
