@@ -2,61 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82d6bae4-47cc-486b-802a-d09ed2a67c0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/BasicNestedLoops.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/eureka-service-registry/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/eureka-service-registry/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/eureka-service-registry/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/eureka-service-registry/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/eureka-service-registry/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/eureka-service-registry/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/eureka-service-registry/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/eureka-service-registry/src/main/java/com/trilogyed/eurekaserviceregistry/EurekaServiceRegistryApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/eureka-service-registry/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/eureka-service-registry/src/test/java/com/trilogyed/eurekaserviceregistry/EurekaServiceRegistryApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/src/main/java/com/example/motoinventoryservice/MotoInventoryServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/src/main/java/com/example/motoinventoryservice/controller/ControllerExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/src/main/java/com/example/motoinventoryservice/controller/MotoInventoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/src/main/java/com/example/motoinventoryservice/dao/MotoInventoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/src/main/java/com/example/motoinventoryservice/dao/MotoInventoryDaoJdbcTemplateImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/src/main/java/com/example/motoinventoryservice/model/Motorcycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/src/main/resources/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/src/test/java/com/example/motoinventoryservice/MotoInventoryDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/src/test/java/com/example/motoinventoryservice/MotoInventoryServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/src/test/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/moto-inventory-service/src/test/resources/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/spring-config-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/spring-config-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/spring-config-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/spring-config-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/spring-config-server/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/spring-config-server/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/spring-config-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/spring-config-server/src/main/java/com/trilogyed/springconfigserver/SpringConfigServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/spring-config-server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/spring-config-server/src/test/java/com/trilogyed/springconfigserver/SpringConfigServerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/vin-lookup/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/vin-lookup/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/vin-lookup/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/vin-lookup/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/vin-lookup/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/vin-lookup/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/vin-lookup/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/vin-lookup/src/main/java/com/trilogyed/vinlookup/VinLookupApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/vin-lookup/src/main/java/com/trilogyed/vinlookup/controller/VinLookupController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/vin-lookup/src/main/java/com/trilogyed/vinlookup/model/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/vin-lookup/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/vin-lookup/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ProjectMoto/vin-lookup/src/test/java/com/trilogyed/vinlookup/VinLookupApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../20190925/Delcie-Dion-magic-eight-ball-service/src/main/java/com/trilogyed/DelcieDionmagiceightballservice/controller/MagicEightBallServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../20190925/Delcie-Dion-magic-eight-ball-service/src/main/java/com/trilogyed/DelcieDionmagiceightballservice/controller/MagicEightBallServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BasicNestedLoops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicNestedLoops.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,6 +11,10 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf>
@@ -80,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/BasicNestedLoops.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="105">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -105,6 +55,14 @@
       </list>
     </option>
   </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="840" />
     <option name="y" value="23" />
@@ -112,7 +70,39 @@
     <option name="height" value="974" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="basicNestedLoops" type="b2602c69:ProjectViewProjectNode" />
+              <item name="basicNestedLoops" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basicNestedLoops" type="b2602c69:ProjectViewProjectNode" />
+              <item name="basicNestedLoops" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="basicNestedLoops" type="b2602c69:ProjectViewProjectNode" />
+              <item name="basicNestedLoops" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunDashboard">
@@ -196,8 +186,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/BasicNestedLoops.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="105">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>
