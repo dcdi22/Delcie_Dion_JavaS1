@@ -10,8 +10,10 @@ public class GettingIndividualDigits {
             String number = String.valueOf(i);
             List<Integer> integerList = new ArrayList<>();
             for (int j = i; j < i + 1; j++) {
-                int num1 = Character.digit(number.charAt(0), 10);
-                int num2 = Character.digit(number.charAt(1), 10);
+//                int num1 = Character.digit(number.charAt(0), 10);
+//                int num2 = Character.digit(number.charAt(1), 10);
+                int num1 = (i / 10);
+                int num2 = (i % 10);
                 int sum = num1 + num2;
 //                System.out.println(j + " " + i);
 //                integerList.add(Character.digit(number.charAt(i), 10));
