@@ -63,24 +63,24 @@ Responsebody: None
 The revenue department has requested a feature to incorporate an ad server that serves up an advertisement with every task that is returned by Tasker. This work was started, but most of the implementation remains to be done. The design notes from the previous team are included here:
 
 
-* The DAO must remain unchanged, so the Adserver must be integrated in the Service Layer.
-* The methods of the Service Layer will translate between TaskViewModel objects and Task objects and will fetch an ad from the Adserver for each TaskViewModel that is returned to the Controller.
-* We have to return an advertisement with each task, but the advertisement is not part of our data model, so we'll use a view model to accomodate this requirement.
+* The DAO must remain unchanged, so the Adserver must be integrated in the Service Layer. ✔︎
+* The methods of the Service Layer will translate between TaskViewModel objects and Task objects and will fetch an ad from the Adserver for each TaskViewModel that is returned to the Controller. ✔︎
+* We have to return an advertisement with each task, but the advertisement is not part of our data model, so we'll use a view model to accomodate this requirement. ✔︎
 * There is no documentation for the Adserver Service, so we'll have to look at the code to figure out what the REST API looks like; maybe we can use Postman to see what comes back from the endpoints.
 
 
 
 ## Architectural/Implementation Changes
 
-* Implement a new Spring Cloud Config Server for this project.
-* Implement a new Eureka Service Registry for this project.
-* Modify the Tasker Service to use the Spring Cloud Config Server for all of its configuration settings.
-* Modify the Tasker Service to include Controller Advice for handling all Controller exceptions. You implementation should use vnd.error.
-* Modify the Adserver Service to use the Spring Cloud Config Server for all of its configuration settings.
-* Modify the Adserver Service to register with the Eureka Service Registry.
-* Make sure the Tasker Service uses the Eureka Service Registry to find the Adserver.
-* Make sure the Tasker Service uses a Feign client to interact with the Adserver. *****
-* Make sure that all integrations between components is done via Dependency Injection.
+* Implement a new Spring Cloud Config Server for this project. ✔︎
+* Implement a new Eureka Service Registry for this project. ✔︎
+* Modify the Tasker Service to use the Spring Cloud Config Server for all of its configuration settings. ✔︎
+* Modify the Tasker Service to include Controller Advice for handling all Controller exceptions. You implementation should use vnd.error. ✔︎
+* Modify the Adserver Service to use the Spring Cloud Config Server for all of its configuration settings. ✔︎
+* Modify the Adserver Service to register with the Eureka Service Registry. ✔︎
+* Make sure the Tasker Service uses the Eureka Service Registry to find the Adserver. ✔︎
+* Make sure the Tasker Service uses a Feign client to interact with the Adserver. ***** ✔︎
+* Make sure that all integrations between components is done via Dependency Injection. ✔︎
 
 ## Additional Requirements
 
