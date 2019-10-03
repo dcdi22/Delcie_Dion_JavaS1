@@ -11,6 +11,17 @@ public class Task {
     private LocalDate dueDate;
     private String category;
 
+    public Task() {
+    }
+
+    public Task(int id, String description, LocalDate createDate, LocalDate dueDate, String category) {
+        this.id = id;
+        this.description = description;
+        this.createDate = createDate;
+        this.dueDate = dueDate;
+        this.category = category;
+    }
+
     public int getId() {
         return id;
     }

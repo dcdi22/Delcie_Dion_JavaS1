@@ -13,12 +13,17 @@ import java.util.List;
 @Component
 public class TaskerServiceLayer {
 
-    TaskerDao taskerDao;
-
     @Autowired
     private AdClient client;
 
     TaskerDao dao;
+
+    @Autowired
+    public TaskerServiceLayer(AdClient client, TaskerDao dao) {
+        this.client = client;
+        this.dao = dao;
+    }
+
 
     public TaskViewModel fetchTask(int id) {
 
@@ -38,7 +43,7 @@ public class TaskerServiceLayer {
     }
 
     public List<TaskViewModel> fetchAllTasks() {
-        List<Task> tList = taskerDao.getAllTasks();
+        List<Task> tList = dao.getAllTasks();
         List<TaskViewModel> tvmList = new ArrayList<>();
         // ...
         for (Task task: tList) {
@@ -50,7 +55,7 @@ public class TaskerServiceLayer {
     }
 
     public List<TaskViewModel> fetchTasksByCategory(String category) {
-        List<Task> tList = taskerDao.getTasksByCategory(category);
+        List<Task> tList = dao.getTasksByCategory(category);
         List<TaskViewModel> tvmList = new ArrayList<>();
         // ...
         for (Task task: tList) {
@@ -89,10 +94,10 @@ public class TaskerServiceLayer {
         task.setCreateDate(taskViewModel.getCreateDate());
         task.setDueDate(taskViewModel.getDueDate());
         task.setCategory(taskViewModel.getCategory());
-//            if (taskViewModel.getId() == task.getId()) {
-//                taskerDao.updateTask(task);
-//
-//            }
+            if (taskViewModel.getId() == task.getId()) {
+                dao.updateTask(task);
+
+            }
     }
 
     private TaskViewModel buildTaskViewModel(Task task) {

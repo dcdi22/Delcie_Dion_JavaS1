@@ -66,7 +66,7 @@ The revenue department has requested a feature to incorporate an ad server that 
 * The DAO must remain unchanged, so the Adserver must be integrated in the Service Layer. ✔︎
 * The methods of the Service Layer will translate between TaskViewModel objects and Task objects and will fetch an ad from the Adserver for each TaskViewModel that is returned to the Controller. ✔︎
 * We have to return an advertisement with each task, but the advertisement is not part of our data model, so we'll use a view model to accomodate this requirement. ✔︎
-* There is no documentation for the Adserver Service, so we'll have to look at the code to figure out what the REST API looks like; maybe we can use Postman to see what comes back from the endpoints.
+* There is no documentation for the Adserver Service, so we'll have to look at the code to figure out what the REST API looks like; maybe we can use Postman to see what comes back from the endpoints. ✔︎
 
 
 
@@ -84,7 +84,7 @@ The revenue department has requested a feature to incorporate an ad server that 
 
 ## Additional Requirements
 
-* The finished project must have a complete unit/integration test suite for the DAO.
+* The finished project must have a complete unit/integration test suite for the DAO. ✔︎
 * The finished project must have a complete unit test suite for the Service Layer that uses mocks.
 * The final Task API must be documented with Open API 3.x (Swagger).
 * You must add JSR 303 validation and an exception handler for the controller.
