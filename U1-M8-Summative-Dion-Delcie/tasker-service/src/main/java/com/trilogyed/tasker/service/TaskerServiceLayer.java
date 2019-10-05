@@ -90,14 +90,15 @@ public class TaskerServiceLayer {
 
     public void updateTask(TaskViewModel taskViewModel) {
         Task task = new Task();
+        task.setId(taskViewModel.getId());
         task.setDescription(taskViewModel.getDescription());
         task.setCreateDate(taskViewModel.getCreateDate());
         task.setDueDate(taskViewModel.getDueDate());
         task.setCategory(taskViewModel.getCategory());
-            if (taskViewModel.getId() == task.getId()) {
+//            if (taskViewModel.getId() == task.getId()) {
                 dao.updateTask(task);
 
-            }
+//            }
     }
 
     private TaskViewModel buildTaskViewModel(Task task) {
