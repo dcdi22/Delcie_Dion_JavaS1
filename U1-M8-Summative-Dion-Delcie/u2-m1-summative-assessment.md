@@ -85,9 +85,9 @@ The revenue department has requested a feature to incorporate an ad server that 
 ## Additional Requirements
 
 * The finished project must have a complete unit/integration test suite for the DAO. ✔︎
-* The finished project must have a complete unit test suite for the Service Layer that uses mocks.
-* The final Task API must be documented with Open API 3.x (Swagger).
-* You must add JSR 303 validation and an exception handler for the controller.
+* The finished project must have a complete unit test suite for the Service Layer that uses mocks. 
+* The final Task API must be documented with Open API 3.x (Swagger). ✔︎
+* You must add JSR 303 validation and an exception handler for the controller. ✔︎
 
 ---
 

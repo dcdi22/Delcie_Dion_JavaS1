@@ -1,13 +1,17 @@
 package com.trilogyed.tasker.model;
 
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.util.Objects;
 
 public class Task {
 
     private int id;
+    @NotNull(message = "description can not be empty")
     private String description;
+    @NotNull(message = "create date can not be empty")
     private LocalDate createDate;
+    @NotNull(message = "due date can not be empty")
     private LocalDate dueDate;
     private String category;
 
@@ -77,5 +81,16 @@ public class Task {
     @Override
     public int hashCode() {
         return Objects.hash(id, description, createDate, dueDate, category);
+    }
+
+    @Override
+    public String toString() {
+        return "Task{" +
+                "id=" + id +
+                ", description='" + description + '\'' +
+                ", createDate=" + createDate +
+                ", dueDate=" + dueDate +
+                ", category='" + category + '\'' +
+                '}';
     }
 }
