@@ -8,38 +8,51 @@ import com.trilogyed.tasker.util.feign.AdClient;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.ArgumentCaptor;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.mockito.*;
+import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.boot.test.mock.mockito.MockBean;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
 //@RunWith(SpringRunner.class)
 //@SpringBootTest
-public class TaskerServiceLayerTest {
+//@RunWith(MockitoJUnitRunner.class)
+public class TaskerServiceLayerTestEXAMPLE {
 
+    @InjectMocks
     TaskerServiceLayer service;
+    @Mock
     TaskerDao taskerDao;
+    @Mock
     AdClient adClient;
+
+    // Client ~> Controller <~ (VM) ~> Service ~> (DTO ~> DAO <~ ResultSet ~> DB
+
+    // Mocking I will create a fake object I would except to see from the database
+
+
 
     @Before
     public void setUp() throws Exception {
+        // Use if you want to comment out the annotation @RunWith(MockitoJUnitRunner.class)
+        MockitoAnnotations.initMocks(this);
         setUpTaskerDaoMock();
         setUpAdClientMock();
 
-        service = new TaskerServiceLayer(adClient, taskerDao);
+//        service = new TaskerServiceLayer(adClient, taskerDao);
+//        MockitoAnnotations.initMocks(this);
     }
 
     // =========== HELPER METHODS ===========
 
     public void setUpTaskerDaoMock() {
-        taskerDao = mock(TaskerDaoJdbcTemplateImpl.class);
+//        taskerDao = mock(TaskerDaoJdbcTemplateImpl.class);
         Task task = new Task();
         task.setId(1);
         task.setDescription("Description");
@@ -64,7 +77,7 @@ public class TaskerServiceLayerTest {
 
     public void setUpAdClientMock(){
         // Come back to this
-        adClient = mock(AdClient.class);
+//        adClient = mock(AdClient.class);
         String str1 = "Home Equity Loans @ 3.87% APR";
 //        String str2 = "Click HERE to qualify for a new car loan!";
 
@@ -86,7 +99,7 @@ public class TaskerServiceLayerTest {
         // just needs to come in and leave as a tvm
 
         TaskViewModel tvm = new TaskViewModel();
-        tvm.setId(1);
+//        tvm.setId(1);
         tvm.setDescription("Description");
         tvm.setCreateDate(LocalDate.of(2019,06, 19));
         tvm.setDueDate(LocalDate.of(2019,06, 19));

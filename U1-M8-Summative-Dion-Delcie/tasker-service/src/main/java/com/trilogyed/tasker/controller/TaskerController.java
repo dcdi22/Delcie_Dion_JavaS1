@@ -63,6 +63,8 @@ public class TaskerController {
         service.updateTask(tvm);
     }
 
+    // =========== DELETE TASK ===========
+
     @RequestMapping(value = "/tasks{id}", method = RequestMethod.DELETE)
     public void deleteTask(@PathVariable int id) {
         service.deleteTask(id);

@@ -6,28 +6,47 @@ import com.company.DelcieDionU1Capstone.viewmodel.InvoiceViewModel;
 import com.company.DelcieDionU1Capstone.viewmodel.OrderViewModel;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.mockito.junit.MockitoJUnitRunner;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
-public class ServiceLayerTest {
+@RunWith(MockitoJUnitRunner.class)
+public class ServiceLayerTestEXAMPLE {
 
+    // Mock is for unit tests from Mockito Library, same as doing the gameDao = mock(gameDao.class
+    // MockBean is for integrated tests
+        // Part of Spring, and mockbean creates a mock instance of the Application Context
+
+    // Shove all mocks inside
+    @InjectMocks
     ServiceLayer service;
+    @Mock
     ConsoleDao consoleDao;
+    @Mock
     GameDao gameDao;
+    @Mock
     InvoiceDao invoiceDao;
+    @Mock
     TShirtDao tShirtDao;
+    @Mock
     ProcessingFeeDao processingFeeDao;
+    @Mock
     SalesTaxRateDao salesTaxRateDao;
 
 
     @Before
     public void setUp() throws Exception {
+        MockitoAnnotations.initMocks(this);
         setUpConsoleDaoMock();
         setUpGameDaoMock();
         setUpInvoiceDaoMock();
@@ -36,7 +55,9 @@ public class ServiceLayerTest {
         setUpProcessingFeeDaoMock();
         setUpSalesTaxRateDaoMock();
 
-        service = new ServiceLayer(consoleDao, gameDao, tShirtDao, invoiceDao, processingFeeDao, salesTaxRateDao);
+        // service = new ServiceLayer(consoleDao, gameDao, tShirtDao, invoiceDao, processingFeeDao, salesTaxRateDao);
+        // This is filled by the InjectMocks annotation
+
     }
 
     // ✷
@@ -398,7 +419,7 @@ public class ServiceLayerTest {
     // HELPER METHODS
     private void setUpInvoiceDaoMock() {
         // What's the point of this line?
-        invoiceDao = mock(InvoiceDaoJdbcTemplateImpl.class);
+//        invoiceDao = mock(InvoiceDaoJdbcTemplateImpl.class);
 
         InvoiceViewModel invoice = new InvoiceViewModel();
         invoice.setInvoiceId(1);
@@ -442,7 +463,7 @@ public class ServiceLayerTest {
 
     private void setUpConsoleDaoMock() {
 
-        consoleDao = mock(ConsoleDaoJdbcTemplateImpl.class);
+//        consoleDao = mock(ConsoleDaoJdbcTemplateImpl.class);
         Console console = new Console();
         console.setConsoleId(1);
         console.setModel("PS4");
@@ -472,7 +493,7 @@ public class ServiceLayerTest {
 
     public void setUpGameDaoMock() {
 
-        gameDao = mock(GameDaoJdbcTemplateImpl.class);
+//        gameDao = mock(GameDaoJdbcTemplateImpl.class);
         Game game = new Game();
         game.setGameId(1);
         game.setTitle("Horizon Zero Dawn");
@@ -504,7 +525,7 @@ public class ServiceLayerTest {
 
     public void setUpTShirtDaoMock() {
 
-        tShirtDao = mock(TShirtDaoJdbcTemplateImpl.class);
+//        tShirtDao = mock(TShirtDaoJdbcTemplateImpl.class);
         TShirt shirt = new TShirt();
         shirt.setTshirtId(1);
         shirt.setSize("S");
@@ -533,7 +554,7 @@ public class ServiceLayerTest {
     }
 
     public void setUpSalesTaxRateDaoMock() {
-        salesTaxRateDao = mock(SalesTaxRateDaoJdbcTemplateImpl.class);
+//        salesTaxRateDao = mock(SalesTaxRateDaoJdbcTemplateImpl.class);
         SalesTaxRate str = new SalesTaxRate();
         str.setState("GA");
         str.setRate(new BigDecimal("0.07"));
@@ -545,14 +566,14 @@ public class ServiceLayerTest {
         List<SalesTaxRate> strList = new ArrayList<>();
         strList.add(str);
 
-        doReturn(str).when(salesTaxRateDao).addSTR(str);
+//        doReturn(str).when(salesTaxRateDao).addSTR(str);
         doReturn(str).when(salesTaxRateDao).getSTR("GA");
         doReturn(strList).when(salesTaxRateDao).getAllSTR();
 
     }
 
     public void setUpProcessingFeeDaoMock() {
-        processingFeeDao = mock(ProcessingFeeDaoJdbcTemplateImpl.class);
+//        processingFeeDao = mock(ProcessingFeeDaoJdbcTemplateImpl.class);
         ProcessingFee pf = new ProcessingFee();
         pf.setProductType("Consoles");
         pf.setFee(new BigDecimal("14.99"));
@@ -564,7 +585,7 @@ public class ServiceLayerTest {
         List<ProcessingFee> pfList = new ArrayList<>();
         pfList.add(pf);
 
-        doReturn(pf).when(processingFeeDao).addProcessingFee(pf2);
+//        doReturn(pf).when(processingFeeDao).addProcessingFee(pf2);
         doReturn(pf).when(processingFeeDao).getProcessingFee("Consoles");
         doReturn(pfList).when(processingFeeDao).getAllProcessingFees();
     }

@@ -7,7 +7,10 @@ import com.trilogyed.tasker.model.TaskViewModel;
 import com.trilogyed.tasker.util.feign.AdClient;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -17,6 +20,8 @@ import java.util.Random;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
 public class TaskerServiceLayerTest {
 
     TaskerServiceLayer service;
@@ -81,30 +86,42 @@ public class TaskerServiceLayerTest {
         // just needs to come in and leave as a tvm
 
         TaskViewModel tvm = new TaskViewModel();
-        tvm.setId(1);
+//        tvm.setId(1);
         tvm.setDescription("Description");
         tvm.setCreateDate(LocalDate.of(2019,06, 19));
         tvm.setDueDate(LocalDate.of(2019,06, 19));
         tvm.setCategory("Category");
         tvm.setAdvertisement(adClient.getRandomAd());
 
-        Task task = new Task();
+        //THis is when we push in
+        tvm =  service.newTask(tvm);
+
+//        Task task = new Task();
 //        task.setId(tvm.getId());
-        task.setDescription(tvm.getDescription());
-        task.setCreateDate(tvm.getCreateDate());
-        task.setDueDate(tvm.getDueDate());
-        task.setCategory(tvm.getCategory());
+//        task.setDescription(tvm.getDescription());
+//        task.setCreateDate(tvm.getCreateDate());
+//        task.setDueDate(tvm.getDueDate());
+//        task.setCategory(tvm.getCategory());
+
+        assertEquals(1, tvm.getId());
+
+        TaskViewModel created = service.newTask(tvm);
+        tvm.setId(created.getId());
+
+        assertEquals(tvm, created);
+
+
+        // ==================================
 
 
         // add task
-        task = taskerDao.createTask(task);
+//        task = taskerDao.createTask(task);
 
 
-//        TaskViewModel tvm2
 
-        TaskViewModel fromService = service.fetchTask(task.getId());
-
-        assertEquals(tvm, fromService);
+//        TaskViewModel fromService = service.fetchTask(task.getId());
+//
+//        assertEquals(tvm, fromService);
 
 
     }
@@ -119,7 +136,7 @@ public class TaskerServiceLayerTest {
         tvm.setCategory("Category");
         tvm.setAdvertisement(adClient.getRandomAd());
 
-//        service.newTask(tvm);
+         tvm = service.newTask(tvm);
 
         Task task = new Task();
         task.setDescription(tvm.getDescription());
@@ -128,7 +145,7 @@ public class TaskerServiceLayerTest {
         task.setCategory(tvm.getCategory());
 
         // add task
-        task = taskerDao.createTask(task);
+//        task = taskerDao.createTask(task);
 
         List<TaskViewModel> tList = service.fetchAllTasks();
         assertEquals(1, tList.size());
@@ -145,7 +162,7 @@ public class TaskerServiceLayerTest {
         tvm.setCategory("Category");
         tvm.setAdvertisement(adClient.getRandomAd());
 
-//        service.newTask(tvm);
+        tvm = service.newTask(tvm);
 
         Task task = new Task();
         task.setDescription(tvm.getDescription());
@@ -154,7 +171,7 @@ public class TaskerServiceLayerTest {
         task.setCategory(tvm.getCategory());
 
         // add task
-        task = taskerDao.createTask(task);
+//        task = taskerDao.createTask(task);
 
         List<TaskViewModel> tList = service.fetchTasksByCategory("Category");
         assertEquals(1, tList.size());
@@ -180,6 +197,12 @@ public class TaskerServiceLayerTest {
 
 //        task = taskerDao.createTask(task);
 
+        /*
+        You should only be hitting the Dao in the update
+        and in the delete other wise you should
+        only hit the service layer
+         */
+
         ArgumentCaptor<Task> taskCaptor = ArgumentCaptor.forClass(Task.class);
         doNothing().when(taskerDao).updateTask(taskCaptor.capture());
         service.updateTask(tvm);
@@ -187,6 +210,39 @@ public class TaskerServiceLayerTest {
         Task task2 = taskCaptor.getValue();
         assertEquals(tvm.getId(), task2.getId());
 //        assertTrue(task.equals(task2));
+    }
+
+    @Test
+    public void updateTestTask() {
+        TaskViewModel tvm = new TaskViewModel();
+        tvm.setId(1);
+        tvm.setDescription("Description");
+        tvm.setCreateDate(LocalDate.of(2019,06, 19));
+        tvm.setDueDate(LocalDate.of(2019,06, 19));
+        tvm.setCategory("Category");
+
+
+        Task expectedTask = new Task();
+        expectedTask.setId(1);
+        expectedTask.setDescription("Description");
+        expectedTask.setCreateDate(LocalDate.of(2019,06,19));
+        expectedTask.setDueDate(LocalDate.of(2019,06,19));
+        expectedTask.setCategory("Category");
+        //to capture value service is passing to DAO
+        //ArgumentCaptor<Task> captor = ArgumentCaptor.forClass(Task.class);
+
+        //set a do-when if not in set up
+        //doNothing().when(taskerDao).updateTask(captor.capture());
+
+        //the method we are testing
+        service.updateTask(tvm);
+        //check that update task is called at least once
+        //verify(taskerDao,times(1)).updateTask(captor.getValue());
+        //assertEquals(expectedTask,captor.getValue());
+
+        //alternately to both above tests, this verify will only pass if the method is called once w/expected Task values
+        verify(taskerDao,times(1)).updateTask(expectedTask);
+
     }
 
     @Test
