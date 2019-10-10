@@ -9,11 +9,13 @@
         <module name="comment-service" />
         <module name="post-service" />
         <module name="stwitter-service" />
+        <module name="spring-config-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="comment-service" target="1.8" />
       <module name="post-service" target="1.8" />
+      <module name="spring-config-server" target="1.8" />
       <module name="stwitter-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -21,6 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="comment-service" options="-parameters" />
       <module name="post-service" options="-parameters" />
+      <module name="spring-config-server" options="-parameters" />
       <module name="stwitter-service" options="-parameters" />
     </option>
   </component>

@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/stwitter-service/pom.xml" />
         <option value="$PROJECT_DIR$/comment-service/pom.xml" />
         <option value="$PROJECT_DIR$/post-service/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-config-server/pom.xml" />
       </list>
     </option>
   </component>

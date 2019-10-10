@@ -2,11 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="addc16fc-18d2-4909-8563-b8536b9aae99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../DelcieDionU1Capstone/DelcieDionU1Capstone/src/test/java/com/company/DelcieDionU1Capstone/service/ServiceLayerTestEXAMPLE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasker-service/src/test/java/com/trilogyed/tasker/service/TaskerServiceLayerTestEXAMPLE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_1_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__com_jcraft_jsch_0_1_54.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__com_jcraft_jzlib_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__io_micrometer_micrometer_core_1_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_5_1_3_201810200350_r.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_http_apache_5_1_3_201810200350_r.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_server_2_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_spring_aop_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_spring_beans_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_spring_context_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_spring_core_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_spring_expression_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_spring_test_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_spring_web_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/comment-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/post-service/src/test/java/com/trilogyed/post/controller/PostControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasker-service/src/main/java/com/trilogyed/tasker/controller/TaskerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tasker-service/src/main/java/com/trilogyed/tasker/controller/TaskerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasker-service/src/test/java/com/trilogyed/tasker/service/TaskerServiceLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tasker-service/src/test/java/com/trilogyed/tasker/service/TaskerServiceLayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/comment-service/src/main/java/com/trilogyed/comment/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/comment-service/src/main/java/com/trilogyed/comment/model/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/post-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/post-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/post-service/src/main/java/com/trilogyed/post/PostServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/post-service/src/main/java/com/trilogyed/post/PostServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/post-service/src/main/java/com/trilogyed/post/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/post-service/src/main/java/com/trilogyed/post/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/post-service/src/main/java/com/trilogyed/post/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/post-service/src/main/java/com/trilogyed/post/model/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/post-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/post-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/post-service/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../U2-M9-Summative-Dion-Delcie/post-service/src/test/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/adserver-service/target/" />
     <ignored path="$PROJECT_DIR$/eureka-service-registry/target/" />
@@ -24,31 +77,69 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasker-service/src/main/java/com/trilogyed/tasker/service/TaskerServiceLayer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasker-service/src/main/java/com/trilogyed/tasker/model/TaskViewModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tasker-service/src/test/java/com/trilogyed/tasker/service/TaskerServiceLayerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
+            <state relative-caret-position="1185">
               <caret line="97" selection-start-line="97" selection-end-line="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-config-server/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/adserver-service/src/main/java/com/trilogyed/adserver/AdserverServiceApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-config-server/src/main/java/com/trilogyed/springconfigserver/SpringConfigServerApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/adserver-service/src/main/resources/bootstrap.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/adserver-service/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasker-service/src/test/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/adserver-service/src/main/java/com/trilogyed/adserver/controller/AdserverController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -68,50 +159,6 @@
             <state relative-caret-position="255">
               <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasker-service/src/main/java/com/trilogyed/tasker/TaskerServiceApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasker-service/src/main/java/com/trilogyed/tasker/model/Task.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasker-service/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-config-server/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-77" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/eureka-service-registry/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-74" />
           </provider>
         </entry>
       </file>
@@ -171,7 +218,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="840" />
     <option name="y" value="23" />
     <option name="width" value="840" />
@@ -183,6 +230,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -194,7 +242,55 @@
             <path>
               <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
               <item name="U1-M8-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka-service-registry" type="462c0819:PsiDirectoryNode" />
+              <item name="adserver-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1-M8-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="adserver-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1-M8-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="adserver-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1-M8-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="adserver-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1-M8-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="adserver-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="adserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1-M8-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="adserver-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="adserver" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1-M8-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="adserver-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
@@ -204,13 +300,87 @@
             <path>
               <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
               <item name="U1-M8-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-config-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1-M8-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-config-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1-M8-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-config-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1-M8-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-config-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springconfigserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1-M8-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-config-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1-M8-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
               <item name="tasker-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1-M8-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="tasker-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1-M8-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="tasker-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1-M8-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="tasker-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1-M8-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="tasker-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1-M8-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1-M8-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="tasker-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tasker" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,7 +417,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TaskerServiceLayerTest.newfetchTask">
+  <component name="RunManager" selected="JUnit.TaskerServiceLayerTest">
+    <configuration name="TaskerDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tasker-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.trilogyed.tasker.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.trilogyed.tasker.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.trilogyed.tasker.dao.TaskerDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TaskerServiceLayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tasker-service" />
       <extension name="coverage">
@@ -259,22 +444,6 @@
       <option name="PACKAGE_NAME" value="com.trilogyed.tasker.service" />
       <option name="MAIN_CLASS_NAME" value="com.trilogyed.tasker.service.TaskerServiceLayerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TaskerServiceLayerTestEXAMPLE.newfetchTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tasker-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.trilogyed.tasker.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.trilogyed.tasker.service" />
-      <option name="MAIN_CLASS_NAME" value="com.trilogyed.tasker.service.TaskerServiceLayerTestEXAMPLE" />
-      <option name="METHOD_NAME" value="newfetchTask" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -329,11 +498,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TaskerServiceLayerTest" />
+        <item itemvalue="JUnit.TaskerDaoTest" />
         <item itemvalue="JUnit.TaskerServiceLayerTest.newfetchTask" />
         <item itemvalue="JUnit.TaskerServiceLayerTest.updateTestTask" />
-        <item itemvalue="JUnit.TaskerServiceLayerTest" />
         <item itemvalue="JUnit.TaskerServiceLayerTest.fetchAllTasks" />
-        <item itemvalue="JUnit.TaskerServiceLayerTestEXAMPLE.newfetchTask" />
       </list>
     </recent_temporary>
   </component>
@@ -351,12 +520,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TaskerServiceLayerTest_newfetchTask - 2019.10.07 at 11h 32m 24s.xml">
-      <configuration name="TaskerServiceLayerTest.newfetchTask" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TaskerServiceLayerTest_newfetchTask - 2019.10.07 at 11h 33m 00s.xml">
-      <configuration name="TaskerServiceLayerTest.newfetchTask" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TaskerServiceLayerTest_fetchAllTasks - 2019.10.07 at 11h 33m 41s.xml">
       <configuration name="TaskerServiceLayerTest.fetchAllTasks" configurationId="JUnit" />
     </history-entry>
@@ -381,9 +544,15 @@
     <history-entry file="TaskerServiceLayerTest_newfetchTask - 2019.10.07 at 11h 49m 24s.xml">
       <configuration name="TaskerServiceLayerTest.newfetchTask" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TaskerDaoTest - 2019.10.09 at 15h 09m 43s.xml">
+      <configuration name="TaskerDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaskerServiceLayerTest - 2019.10.09 at 15h 09m 55s.xml">
+      <configuration name="TaskerServiceLayerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="840" y="23" width="840" height="974" extended-state="0" />
+    <frame x="840" y="23" width="840" height="974" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -399,7 +568,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.29568106" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.29568106" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3986711" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -452,16 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adserver-service/src/main/resources/bootstrap.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adserver-service/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasker-service/src/test/resources/schema.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -490,24 +649,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-config-server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasker-service/src/test/java/com/trilogyed/tasker/TaskerServiceApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasker-service/src/test/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -539,13 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adserver-service/src/main/java/com/trilogyed/adserver/controller/AdserverController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasker-service/src/main/java/com/trilogyed/tasker/dao/TaskerDaoJdbcTemplateImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -553,24 +691,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-config-server/src/main/java/com/trilogyed/springconfigserver/SpringConfigServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eureka-service-registry/src/main/java/com/trilogyed/eurekaserviceregistry/EurekaServiceRegistryApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adserver-service/src/main/java/com/trilogyed/adserver/AdserverServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -604,30 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasker-service/src/test/java/com/trilogyed/tasker/dao/TaskerDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasker-service/src/main/java/com/trilogyed/tasker/TaskerServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasker-service/src/main/java/com/trilogyed/tasker/model/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4-sources.jar!/org/mockito/internal/verification/VerificationModeFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -652,16 +752,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasker-service/src/test/java/com/trilogyed/tasker/service/TaskerServiceLayerTestEXAMPLE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="109" column="34" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasker-service/src/main/java/com/trilogyed/tasker/service/TaskerServiceLayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
+        <state relative-caret-position="930">
           <caret line="70" column="33" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
         </state>
       </provider>
@@ -676,28 +769,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasker-service/src/test/java/com/trilogyed/tasker/service/TaskerServiceLayerTest.java">
+    <entry file="file://$PROJECT_DIR$/tasker-service/src/main/java/com/trilogyed/tasker/TaskerServiceApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        <state relative-caret-position="180">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasker-service/src/main/java/com/trilogyed/tasker/model/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tasker-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
+        <state relative-caret-position="765">
           <caret line="51" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-config-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-77" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka-service-registry/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasker-service/src/test/java/com/trilogyed/tasker/dao/TaskerDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74" />
+        <state relative-caret-position="255">
+          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasker-service/src/test/java/com/trilogyed/tasker/service/TaskerServiceLayerTestEXAMPLE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="109" column="34" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasker-service/src/test/java/com/trilogyed/tasker/service/TaskerServiceLayerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adserver-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasker-service/src/test/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adserver-service/src/main/resources/bootstrap.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-config-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-config-server/src/main/java/com/trilogyed/springconfigserver/SpringConfigServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adserver-service/src/main/java/com/trilogyed/adserver/AdserverServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adserver-service/src/main/java/com/trilogyed/adserver/controller/AdserverController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="28" />
+        </state>
       </provider>
     </entry>
   </component>
