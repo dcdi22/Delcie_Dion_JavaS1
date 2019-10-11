@@ -7,6 +7,7 @@ import java.util.Objects;
 public class Task {
 
     private int id;
+    // Bean vaildation
     @NotNull(message = "description can not be empty")
     private String description;
     @NotNull(message = "create date can not be empty")

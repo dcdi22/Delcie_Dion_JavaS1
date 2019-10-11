@@ -7,6 +7,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -19,7 +20,7 @@ public class PostController {
 
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
-    public Post createPost(@RequestBody Post post) {
+    public Post createPost(@RequestBody @Valid Post post) {
         return postDao.addPost(post);
     }
 
@@ -46,7 +47,7 @@ public class PostController {
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     @ResponseStatus(value = HttpStatus.OK)
-    public void updatePost(@RequestBody Post post, @PathVariable int id) {
+    public void updatePost(@RequestBody @Valid Post post, @PathVariable int id) {
 //        try {
 //            postDao.getPost(id).getPostID();
 //        } catch (Exception e) {

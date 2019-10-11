@@ -1,15 +1,38 @@
 package com.trilogyed.comment.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
+
+import javax.validation.constraints.NotBlank;
 import java.time.LocalDate;
 import java.util.Objects;
 
 public class Comment {
 
     private int commentId;
+//    @NotBlank(message = "Post Id cannot be empty")
     private int postId;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
+    @JsonDeserialize(using = LocalDateDeserializer.class)
+    @JsonSerialize(using = LocalDateSerializer.class)
     private LocalDate createDate;
+    @NotBlank(message = "Commenter Name cannot be empty")
     private String commenterName;
     private String comment;
+
+    public Comment() {
+    }
+
+    public Comment(int commentId, int postId, LocalDate createDate, String commenterName, String comment) {
+        this.commentId = commentId;
+        this.postId = postId;
+        this.createDate = createDate;
+        this.commenterName = commenterName;
+        this.comment = comment;
+    }
 
     public int getCommentId() {
         return commentId;
@@ -43,14 +66,11 @@ public class Comment {
         this.commenterName = commenterName;
     }
 
-    public Comment() {
+    public String getComment() {
+        return comment;
     }
 
-    public Comment(int commentId, int postId, LocalDate createDate, String commenterName, String comment) {
-        this.commentId = commentId;
-        this.postId = postId;
-        this.createDate = createDate;
-        this.commenterName = commenterName;
+    public void setComment(String comment) {
         this.comment = comment;
     }
 
