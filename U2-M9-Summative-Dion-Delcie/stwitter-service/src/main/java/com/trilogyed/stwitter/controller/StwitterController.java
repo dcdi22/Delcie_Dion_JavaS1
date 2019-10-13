@@ -51,7 +51,12 @@ public class StwitterController {
     @Cacheable
     @RequestMapping(value = "/posts/{id}", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
-    public PostViewModel getPost(@PathVariable int id) {
+    public PostViewModel getPost(@PathVariable int id) throws EntityNotFoundException {
+        try {
+            service.getPost(id).getPostID();
+        } catch (Exception e) {
+            throw new EntityNotFoundException("ID " + id + " does not exist");
+        }
         return service.getPost(id);
     }
 
@@ -59,7 +64,13 @@ public class StwitterController {
 
     @RequestMapping(value = "/posts/user/{poster_name}", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
-    public List<PostViewModel> getPostsForPoster(@PathVariable String poster_name) {
+    public List<PostViewModel> getPostsForPoster(@PathVariable String poster_name) throws EntityNotFoundException {
+        try {
+            service.getPostsForPoster(poster_name);
+        } catch (Exception e) {
+            throw new EntityNotFoundException(poster_name + " does not exist");
+        }
+
         return service.getPostsForPoster(poster_name);
     }
 
