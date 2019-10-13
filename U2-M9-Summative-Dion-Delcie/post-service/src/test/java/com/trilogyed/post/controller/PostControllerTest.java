@@ -133,6 +133,35 @@ public class PostControllerTest {
     }
 
     @Test
+    public void getPostsByPoster() throws Exception {
+        Post post = new Post(
+                1,
+                LocalDate.of(2019, 06,19),
+                "Delcie",
+                "Great Book"
+        );
+        Post post2 = new Post(
+                2,
+                LocalDate.of(2019, 06,19),
+                "Delcie",
+                "Great Book"
+        );
+
+        List<Post> posts = new ArrayList<>();
+        posts.add(post);
+        posts.add(post2);
+
+        when(postDao.getPostByPoster("Delcie")).thenReturn(posts);
+
+        String outputJson = mapper.writeValueAsString(posts);
+
+        this.mockMvc.perform(get("/posts/poster/Delcie"))
+                .andDo(print())
+                .andExpect(status().isOk())
+                .andExpect(content().json(outputJson));
+    }
+
+    @Test
     public void updatePost() throws Exception {
         Post post = new Post(
                 1,

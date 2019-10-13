@@ -14,6 +14,7 @@ import org.springframework.cloud.autoconfigure.RefreshAutoConfiguration;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -140,10 +141,62 @@ public class CommentControllerTest {
     }
 
     @Test
-    public void updateComment() {
+    public void getCommentsByPostId() throws Exception {
+        Comment comment1 = new Comment(
+                1,
+                1,
+                LocalDate.of(2019, 06,19),
+                "Delcie",
+                "A comment"
+        );
+
+        Comment comment2 = new Comment(
+                2,
+                1,
+                LocalDate.of(2019, 06,19),
+                "Delcie",
+                "A comment"
+        );
+
+        List<Comment> comments = new ArrayList<>();
+        comments.add(comment1);
+        comments.add(comment2);
+
+        when(commentDao.getCommentsByPostId(1)).thenReturn(comments);
+
+        String outputJson = mapper.writeValueAsString(comments);
+
+        this.mockMvc.perform(get("/comments/postId/1"))
+                .andDo(print())
+                .andExpect(status().isOk())
+                .andExpect(content().json(outputJson));
+    }
+
+    @Test
+    public void updateComment() throws Exception {
+        Comment comment1 = new Comment(
+                1,
+                1,
+                LocalDate.of(2019, 06,19),
+                "Delcie",
+                "A comment"
+        );
+
+        String inputJson = mapper.writeValueAsString(comment1);
+
+        this.mockMvc.perform(put("/comments/1")
+        .content(inputJson)
+        .contentType(MediaType.APPLICATION_JSON))
+                .andDo(print())
+                .andExpect(status().isOk());
     }
 // :)
     @Test
-    public void deleteComment() {
+    public void deleteComment() throws Exception {
+        this.mockMvc.perform(MockMvcRequestBuilders.delete("/comments/1"))
+              .andDo(print())
+              .andExpect(status().isOk())
+                .andExpect(content().string(""));
+
     }
 }

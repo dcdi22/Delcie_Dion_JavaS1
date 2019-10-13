@@ -79,6 +79,16 @@ public class CommentDaoTest {
     }
 
     @Test
+    public void getCommentsByPostId() {
+        comment1 = commentDao.addComment(comment1);
+        comment2 = commentDao.addComment(comment2);
+
+        List<Comment> comments = commentDao.getCommentsByPostId(1);
+
+        assertEquals(1, comments.size());
+    }
+
+    @Test
     public void updateComment() {
         comment1 = commentDao.addComment(comment1);
 

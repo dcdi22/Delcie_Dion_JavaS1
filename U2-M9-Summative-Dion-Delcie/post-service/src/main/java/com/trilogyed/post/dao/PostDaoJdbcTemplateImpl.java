@@ -22,6 +22,8 @@ public class PostDaoJdbcTemplateImpl implements PostDao {
             "select * from post where post_id = ?";
     public static final String SELECT_ALL_POSTS =
             "select * from post";
+    public static final String SELECT_POSTS_BY_POSTER_NAME = "" +
+            "select * from post where poster_name = ?";
     public static final String UPDATE_POST =
             "update post set post_date = ?, poster_name = ?, post = ? where post_id = ?";
     public static final String DELETE_POST =
@@ -60,6 +62,11 @@ public class PostDaoJdbcTemplateImpl implements PostDao {
     @Override
     public List<Post> getAllPosts() {
         return jdbcTemplate.query(SELECT_ALL_POSTS, this::mapRowToPost);
+    }
+
+    @Override
+    public List<Post> getPostByPoster(String posterName) {
+        return jdbcTemplate.query(SELECT_POSTS_BY_POSTER_NAME, this::mapRowToPost, posterName);
     }
 
     @Override

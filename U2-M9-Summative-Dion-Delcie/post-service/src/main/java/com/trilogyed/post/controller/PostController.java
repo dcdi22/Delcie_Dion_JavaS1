@@ -17,7 +17,7 @@ public class PostController {
 
     @Autowired
     PostDao postDao;
-
+/**/
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
     public Post createPost(@RequestBody @Valid Post post) {
@@ -43,6 +43,12 @@ public class PostController {
         } else {
             throw new IllegalArgumentException("No posts found");
         }
+    }
+
+    @RequestMapping(value = "/poster/{posterName}",  method = RequestMethod.GET)
+    @ResponseStatus(value = HttpStatus.OK)
+    public List<Post> getPostsByPoster(@PathVariable String posterName) {
+        return postDao.getPostByPoster(posterName);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)

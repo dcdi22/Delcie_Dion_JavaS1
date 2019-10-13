@@ -12,6 +12,8 @@ public interface PostDao {
 
     List<Post> getAllPosts();
 
+    List<Post> getPostByPoster(String posterName);
+
     void updatePost(Post post);
 
     void deletePost(int postID);

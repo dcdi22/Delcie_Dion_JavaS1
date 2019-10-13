@@ -12,6 +12,8 @@ public interface CommentDao {
 
     List<Comment> getAllComments();
 
+    List<Comment> getCommentsByPostId(int postId);
+
     void updateComment(Comment comment);
 
     void deleteComment(int commentId);

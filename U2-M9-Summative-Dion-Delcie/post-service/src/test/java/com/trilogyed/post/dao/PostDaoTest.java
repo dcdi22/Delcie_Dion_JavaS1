@@ -66,6 +66,16 @@ public class PostDaoTest {
     }
 
     @Test
+    public void getPostsByPosterName() {
+        post1 = postDao.addPost(post1);
+        post2 = postDao.addPost(post2);
+
+        List<Post> postList = postDao.getPostByPoster("Delcie");
+
+        assertEquals(1, postList.size());
+    }
+
+    @Test
     public void updatePost() {
         post1 = postDao.addPost(post1);
 

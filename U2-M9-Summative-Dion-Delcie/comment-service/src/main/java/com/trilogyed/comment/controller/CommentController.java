@@ -45,6 +45,12 @@ public class CommentController {
         }
     }
 
+    @RequestMapping(value = "/postId/{id}", method = RequestMethod.GET)
+    @ResponseStatus(value = HttpStatus.OK)
+    public List<Comment> getCommentsByPostId(@PathVariable int id) {
+        return commentDao.getCommentsByPostId(id);
+    }
+
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     @ResponseStatus(value = HttpStatus.OK)
     public void updateComment(@RequestBody @Valid Comment comment, @PathVariable int id) {

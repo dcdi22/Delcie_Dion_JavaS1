@@ -1,43 +1,47 @@
 package com.trilogyed.stwitter.models;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
+
 import java.time.LocalDate;
-import java.util.Date;
-import java.util.List;
 import java.util.Objects;
 
 public class Post {
 
-    private int postId;
-    private String postContent;
+    /*
+    post_id int not null auto_increment primary key,
+    post_date date not null,
+    poster_name varchar(50) not null,
+    post varchar(255)
+     */
+
+    private int postID;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
+    @JsonDeserialize(using = LocalDateDeserializer.class)
+    @JsonSerialize(using = LocalDateSerializer.class)
     private LocalDate postDate;
     private String posterName;
-    private List<String> comments;
+    private String post;
 
     public Post() {
     }
 
-    public Post(int postId, String postContent, LocalDate postDate, String posterName, List<String> comments) {
-        this.postId = postId;
-        this.postContent = postContent;
+    public Post(int postID, LocalDate postDate, String posterName, String post) {
+        this.postID = postID;
         this.postDate = postDate;
         this.posterName = posterName;
-        this.comments = comments;
+        this.post = post;
     }
 
-    public int getPostId() {
-        return postId;
+    public int getPostID() {
+        return postID;
     }
 
-    public void setPostId(int postId) {
-        this.postId = postId;
-    }
-
-    public String getPostContent() {
-        return postContent;
-    }
-
-    public void setPostContent(String postContent) {
-        this.postContent = postContent;
+    public void setPostID(int postID) {
+        this.postID = postID;
     }
 
     public LocalDate getPostDate() {
@@ -56,42 +60,37 @@ public class Post {
         this.posterName = posterName;
     }
 
-    public List<String> getComments() {
-        return comments;
+    public String getPost() {
+        return post;
     }
 
-    public void setComments(List<String> comments) {
-        this.comments = comments;
+    public void setPost(String post) {
+        this.post = post;
     }
-
-    // did not set anything to notnull
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Post post = (Post) o;
-        return postId == post.postId &&
-                Objects.equals(postContent, post.postContent) &&
-                Objects.equals(postDate, post.postDate) &&
-                Objects.equals(posterName, post.posterName) &&
-                Objects.equals(comments, post.comments);
+        Post post1 = (Post) o;
+        return postID == post1.postID &&
+                postDate.equals(post1.postDate) &&
+                posterName.equals(post1.posterName) &&
+                post.equals(post1.post);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(postId, postContent, postDate, posterName, comments);
+        return Objects.hash(postID, postDate, posterName, post);
     }
-
 
     @Override
     public String toString() {
         return "Post{" +
-                "postId=" + postId +
-                ", postContent='" + postContent + '\'' +
+                "postID=" + postID +
                 ", postDate=" + postDate +
                 ", posterName='" + posterName + '\'' +
-                ", comments=" + comments +
+                ", post='" + post + '\'' +
                 '}';
     }
 }
