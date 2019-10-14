@@ -44,6 +44,12 @@ public class ServiceLayer {
 
     // =============== CREATE POST ===============
 
+    /**
+     *
+     * @param pvm
+     * @return PostViewModel
+     */
+
     public PostViewModel createPost(PostViewModel pvm) {
         Post post = new Post();
         post.setPostDate(pvm.getPostDate());
@@ -62,6 +68,13 @@ public class ServiceLayer {
     // =============== CREATE COMMENT ===============
 
 
+    /**
+     * Added create comment method in order to give user the ability to
+     * add comment beyond default post
+     * @param comment
+     * @return String
+     */
+
     public String createComment(Comment comment) {
         Comment msg = new Comment(
                 comment.getCommentId(),
@@ -77,6 +90,12 @@ public class ServiceLayer {
     }
 
     // =============== GET POST ===============
+
+    /**
+     *
+     * @param postId
+     * @return PostViewModel
+     */
 
 
     public PostViewModel getPost(int postId) {
@@ -108,6 +127,12 @@ public class ServiceLayer {
     }
 
     // =============== GET POST BY POSTER ===============
+
+    /**
+     *
+     * @param posterName
+     * @return List of PostViewModel
+     */
 
 
     public List<PostViewModel> getPostsForPoster(String posterName) {

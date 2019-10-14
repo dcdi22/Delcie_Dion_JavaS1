@@ -28,6 +28,11 @@ public class StwitterController {
 //        this.service = service;
 //    }
 
+    /*
+    Service and controller work in postman however, all controller
+    tests fail due to a missing annotation??
+     */
+
     // ======== CREATE COMMENT ========
 
     @RequestMapping(value = "/comments", method = RequestMethod.POST)
