@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9120a94-581b-42e4-a5d4-6a65878dae8a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/service/ServiceLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/service/ServiceLayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stwitter-service/src/test/java/com/trilogyed/stwitter/controller/StwitterControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/src/test/java/com/trilogyed/stwitter/controller/StwitterControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M3-Summative-Dion-Delcie/DelcieDionU1Capstone/src/main/java/com/company/DelcieDionU1Capstone/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M3-Summative-Dion-Delcie/DelcieDionU1Capstone/src/main/java/com/company/DelcieDionU1Capstone/util/PasswordUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../U2-M3-Summative-Dion-Delcie/DelcieDionU1Capstone/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stwitter-service/src/test/java/com/trilogyed/stwitter/service/ServiceLayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/stwitter-service/src/test/java/com/trilogyed/stwitter/service/ServiceLayerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/stwitter-service/target/" />
     <ignored path="$PROJECT_DIR$/comment-service/target/" />
@@ -25,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/StwitterController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-309">
-              <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state relative-caret-position="735">
+              <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stwitter-service/src/test/java/com/trilogyed/stwitter/controller/StwitterControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            <state relative-caret-position="75">
+              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.8.RELEASE/spring-beans-5.1.8.RELEASE.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="19260">
               <caret line="1371" selection-start-line="1371" selection-end-line="1371" />
             </state>
           </provider>
@@ -81,17 +84,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/StwitterServiceApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="345">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="e#1065#1066#0" expanded="true" />
+                <element signature="e#1113#1114#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/service/ServiceLayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="131" column="7" lean-forward="true" selection-start-line="131" selection-start-column="7" selection-end-line="131" selection-end-column="7" />
+            <state relative-caret-position="720">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,16 +110,16 @@
         <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/util/feign/CommentClient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stwitter-service/src/test/java/com/trilogyed/stwitter/service/ServiceLayerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="220">
+              <caret line="62" column="49" lean-forward="true" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,14 +190,14 @@
         <option value="$PROJECT_DIR$/stwitter-service/pom.xml" />
         <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/EntityNotFoundException.java" />
         <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/ExceptionHandlerController.java" />
-        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/StwitterController.java" />
-        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/StwitterServiceApplication.java" />
         <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/util/messages/Comment.java" />
-        <option value="$PROJECT_DIR$/stwitter-service/src/test/java/com/trilogyed/stwitter/service/ServiceLayerTest.java" />
         <option value="$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/company/commentqueueconsumer/util/feign/CommentServiceClient.java" />
         <option value="$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/company/commentqueueconsumer/CommentQueueConsumerApplication.java" />
         <option value="$PROJECT_DIR$/stwitter-service/src/test/java/com/trilogyed/stwitter/controller/StwitterControllerTest.java" />
         <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/service/ServiceLayer.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/test/java/com/trilogyed/stwitter/service/ServiceLayerTest.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/StwitterServiceApplication.java" />
+        <option value="$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/StwitterController.java" />
       </list>
     </option>
   </component>
@@ -210,7 +217,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="840" />
     <option name="y" value="23" />
     <option name="width" value="840" />
@@ -230,6 +237,76 @@
             <path>
               <item name="U2-M2-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
               <item name="U2-M2-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U2-M2-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U2-M2-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="post-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U2-M2-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U2-M2-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="post-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U2-M2-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U2-M2-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="post-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U2-M2-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U2-M2-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="post-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U2-M2-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U2-M2-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="post-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="post" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U2-M2-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U2-M2-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="post-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="post" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U2-M2-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U2-M2-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="post-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="post" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U2-M2-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U2-M2-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="post-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="post" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U2-M2-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U2-M2-Summative-Dion-Delcie" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-config-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="U2-M2-Summative-Dion-Delcie" type="b2602c69:ProjectViewProjectNode" />
@@ -391,7 +468,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StwitterControllerTest">
+  <component name="RunManager" selected="JUnit.ServiceLayerTest">
     <configuration name="CommentQueueConsumerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.commentqueueconsumer.CommentQueueConsumerApplication" />
       <module name="comment-queue-consumer" />
@@ -466,11 +543,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ServiceLayerTest" />
+        <item itemvalue="Application.StwitterServiceApplication" />
         <item itemvalue="JUnit.StwitterControllerTest" />
         <item itemvalue="Application.CommentQueueConsumerApplication" />
         <item itemvalue="JUnit.StwitterControllerTest.getPostReturnWithJson" />
-        <item itemvalue="JUnit.ServiceLayerTest" />
-        <item itemvalue="Application.StwitterServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -488,21 +565,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CommentDaoTest - 2019.10.13 at 20h 26m 20s.xml">
-      <configuration name="CommentDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommentDaoTest - 2019.10.13 at 20h 27m 10s.xml">
-      <configuration name="CommentDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommentControllerTest - 2019.10.13 at 20h 28m 01s.xml">
-      <configuration name="CommentControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PostDaoTest - 2019.10.13 at 20h 28m 53s.xml">
-      <configuration name="PostDaoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PostControllerTest - 2019.10.13 at 20h 29m 03s.xml">
-      <configuration name="PostControllerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ServiceLayerTest - 2019.10.13 at 20h 30m 03s.xml">
       <configuration name="ServiceLayerTest" configurationId="JUnit" />
     </history-entry>
@@ -518,9 +580,24 @@
     <history-entry file="StwitterControllerTest - 2019.10.13 at 22h 54m 59s.xml">
       <configuration name="StwitterControllerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ServiceLayerTest - 2019.10.14 at 08h 43m 49s.xml">
+      <configuration name="ServiceLayerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StwitterControllerTest - 2019.10.14 at 08h 44m 13s.xml">
+      <configuration name="StwitterControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StwitterControllerTest - 2019.10.14 at 08h 46m 43s.xml">
+      <configuration name="StwitterControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StwitterControllerTest - 2019.10.14 at 08h 47m 01s.xml">
+      <configuration name="StwitterControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ServiceLayerTest - 2019.10.17 at 14h 29m 09s.xml">
+      <configuration name="ServiceLayerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="840" y="23" width="840" height="974" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -536,7 +613,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32890365" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.2934662" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.2927073" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3996004" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -916,38 +993,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/company/commentqueueconsumer/CommentQueueConsumerApplication.java">
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/StwitterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/StwitterServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/util/feign/CommentClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stwitter-service/src/test/java/com/trilogyed/stwitter/StwitterServiceApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stwitter-service/src/test/java/com/trilogyed/stwitter/service/ServiceLayerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="735">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -957,10 +1006,17 @@
     <entry file="file://$PROJECT_DIR$/eureka-service-registry/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/test/java/com/trilogyed/stwitter/StwitterServiceApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stwitter-service/src/test/java/com/trilogyed/stwitter/controller/StwitterControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        <state relative-caret-position="75">
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -969,25 +1025,50 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.8.RELEASE/spring-beans-5.1.8.RELEASE.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="19260">
           <caret line="1371" selection-start-line="1371" selection-end-line="1371" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/controller/StwitterController.java">
+    <entry file="file://$PROJECT_DIR$/comment-queue-consumer/src/main/java/com/company/commentqueueconsumer/CommentQueueConsumerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-309">
-          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="75">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/StwitterServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="e#1113#1114#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/service/ServiceLayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="131" column="7" lean-forward="true" selection-start-line="131" selection-start-column="7" selection-end-line="131" selection-end-column="7" />
+        <state relative-caret-position="720">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/main/java/com/trilogyed/stwitter/util/feign/CommentClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stwitter-service/src/test/java/com/trilogyed/stwitter/service/ServiceLayerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="62" column="49" lean-forward="true" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

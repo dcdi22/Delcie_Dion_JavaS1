@@ -37,6 +37,8 @@ public class ServiceLayerTest {
     public void setUp() throws Exception {
 //        setUpCommentClientMock();
         setUpPostClientMock();
+
+        serviceLayer = new ServiceLayer(commentClient, postClient, rabbitTemplate);
     }
 
 //    private void setUpCommentClientMock() {
